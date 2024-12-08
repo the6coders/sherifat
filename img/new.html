@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-size: medium;
+            font-family: sans-serif;
+            color: black;
+
+        }
+        @keyframes fade-in {
+            0%{
+                opacity: 0.7;
+                transform: translateY(20px);
+            }
+            100%{
+                opacity: 0.7;
+                transform: translate(0);
+            }
+            
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: fade-in 1s; 
+            color: white;
+          
+          
+        }
+        .imagee{
+            background-image: url("blick.png");
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: darken;
+            background-size: cover;   
+            background-position: center;  
+            height: 100vh; 
+            animation: fade-in 1s;  
+            color: white;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .main{
+            text-align: center;
+             margin: auto;
+             margin-top: 250px;
+             color: rgba(236, 166, 14, 0.753);
+             animation: fade-in 3s;
+            
+            
+        }
+        .nav-menu{
+            list-style: none;
+            display: flex;
+            margin-right: 50px;
+            
+        }
+        .links{
+            margin-right: 15px;
+            margin-left: 15px; 
+        }
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+        .link:hover{
+            color: rgba(236, 166, 14, 0.973);
+        }
+        input{
+           height: 30px; 
+           width: 200px;
+           padding: 10px;
+           border: none;
+           border-radius: 10px;
+           opacity: 0.7;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.5s;
+        }
+        input:focus{
+            opacity: 1;
+            
+        }
+        input::placeholder{
+            font-size: 15px;
+            font-weight: bold;
+            opacity: 0.6;
+        }
+        .btn{
+        height: 30px; 
+        width: 80px;
+        border: none;
+        border-radius: 3px;
+        transition: all 0.9s;
+
+    }
+    .btn:hover{
+        transition: all 0.9s;
+        opacity: 0.7;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        width: 1150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        padding-bottom: 20px;
+        border-top: 1px solid rgba(255, 255, 252, 0.2);
+        color: rgba(255, 255, 255, 0.5);   
+        font-size: 12px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="imagee">
+        <header class="header">
+            <p>my logo</p>
+            <ul class="nav-menu">
+                <li class="links"><a href="#" class="link">home</a></li>
+                <li class="links"><a href="#" class="link">EJGe</a></li>
+                <li class="links"><a href="#" class="link">fdfdfe</a></li>
+                <li class="links"><a href="#" class="link">faq</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <h1>welcome to my first Rufisdata</h1>
+            <p>plartform to purchase all telecome services</p>
+            <input type="text" placeholder="this is aishah">
+            <button class="btn">click to go</button>
+        </div>
+       <footer class="footer">
+        <p class="copy">&copy; 2024.</p>
+        <p class="right">copyright at Rufisdata</p>
+       </footer>
+    </div>
+  
+</body>
+</html>
