@@ -9,11 +9,15 @@
             background-image: url(/img/blick.png);
             width: 99%;
             height: 45px;
+            position: sticky;
+            top: 0px;
+           
         }
         .navbar{
             display: flex;
             justify-content: center;
             color: white;
+            
         }
         .list{
             list-style: none;
@@ -64,6 +68,40 @@
             margin-top: -20px;
             font-weight: bolder;
         }
+        .container{
+            background-color: skyblue;
+            width: 100%;
+            height: 600px;
+        }
+        .cover{
+            margin: 20px;
+            padding-top: 15px;
+            display: flex;
+
+            
+
+        }
+        .box{
+            height: 200px;
+            width: 300px;
+            margin-right: 20px ;
+            
+        }
+        #static{
+            background-color: red;
+        }
+        #relative{
+            background-color: blue;
+            
+        }
+        #absolute{
+            background-color:pink;         
+
+        }
+        #sticky{
+            background-color: green;
+        }
+        
       
         </style>
 </head>
@@ -95,8 +133,18 @@
     <input type="text" class="inp" placeholder="search here">
     <button class="submit">submit</button>
    </div>
-    <!-- <table border="1px">
-        <tr>
+   <div class="container">
+    <div class="cover">
+            <div class="box" id="static">red</div>
+        <div class="box" id="relative">blue </div>
+        <div class="box" id="absolute">pink</div>
+        <div class="box" id="sticky">green</div>
+    </div>
+        
+   </div>
+  
+   <!-- <table border="1px">
+       <tr>
             <td colspan="2">employment app</td>
           
         </tr>
