@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rufisda-orac</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin: 0%;
             padding: 0px;
             box-sizing: border-box;
         }
+        /* utility codes transition and animation */
+        .transition{
+            transition: all 0.5s;
+              /* transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.3s; */
+        }
+        .animation{
+            animation: slideinleft 3s ease-in infinite; 
+        }
+        h1{
+            text-transform: capitalize;
+        }
+        .line-height{
+            line-height: 20px;
+        }
+        /* end of utility coeds  */
         .header{
-            background: url(img/pic1.jpg) center/cover no-repeat ;
+            background: url(img/contact.png) no-repeat center/cover;
             width:100%;
-            height: 500px;
+            height: 100vh;
             padding-top: 7px;
         }
 
@@ -21,16 +40,23 @@
             display: flex;
             justify-content: flex-end;
             margin-right: 30px;        
-           list-style: none;
-            gap: 60px;
-           
+            list-style: none;
+            gap: 40px;           
         }
-       .list1{
-        background-color: rgb(243, 10, 146);
-            opacity: 1;
-            border-radius: 13px;
-            color: rgb(250, 249, 249);
-            padding: 5px;       
+       .list1{            
+           
+            padding: 5px;  
+            border-radius: 5px;
+       }
+       a{
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;   
+        font-size: 20px;
+        text-transform: capitalize;
+       }
+       a:active, a:hover{
+        opacity: 0.4;        
        }
        .header-content{
             display: flex;
@@ -43,19 +69,45 @@
             color: white;
 
        }
-       .content2{
-            background-color: lightgrey;
-            width:100%;
-            height: ;
-            padding: auto;
+       @keyframes slideinleft {
+        from{
+           transform: translateX(-400px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+        
        }
-       .content2 H1 , P{
+    .btn{
+        background-color: brown;
+        color: white;
+        padding: 0.5em 1em;
+        margin-left: 45%;
+        margin-top: 100px;
+        border: 3px solid white;
+        border-radius: 5px;
+        text-transform: capitalize;  
+       
+    }
+  
+    .btn:hover, .box1:hover{
+        transform: translateY(-1px);
+        background-color: white;
+        color: brown; 
+
+    }
+    .content2{
+           background-color: white;
+            width:100%;
+            padding: auto;
+     }
+    .content2 H1,.content2:nth-child(2){
         text-align: center;
         line-height: 50px;
         
-       }
-       .box{
-        border-top: 1px solid black;
+    }
+    .box{
+        border-top: 1px solid blueviolet;
         display: flex; 
         gap: 5px;
         justify-content: space-evenly;
@@ -65,26 +117,26 @@
         margin: auto;
         height: 450px;
         
-       }
-       .box1{
+    }
+    .box1{
+        background-color: lightslategray;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:white;
         width: 20%;
         height: 150px;
         border-bottom: 1px solid black;
+        border-top: 1px solid black;
         border-radius: 15px;
-       }
+    }
        .footer{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 40px;
         background-color: lightslategray;
-        height: 100px;
-        
-       }
+        height: 100px;        
+    }
        .foot{
         display: flex;
         align-items: center;
@@ -93,20 +145,149 @@
         border-radius: 12px;
         padding: 6px;
         height: 20px;
-        padding: 15px;
-             
-       }
+        padding: 15px;             
+    }
+    .cont-us{
+        background: url(img/contact.png) no-repeat center/cover;       
+        max-width: 100%;
+        height: 500px;
+        color: white;
+    }
+    .one{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 110px;
+        margin: auto;
+        text-align: center;
+        padding: 30px 45px;
+     }
+    .cont{
+        display: flex;
+        justify-content: space-between;
+        height: 350px;
+        max-width: 90vw;
+        margin: 30px auto;
+
+    }
+    .left{
+        display: flex;
+        margin-left: 50px;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 45%;
+    }
+    i{
+    background-color: #eaeaea;
+    color:blue;
+    padding: 15px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -7px;
+}  
+    .address{
+        display: flex;
+        height: 80px;
+        
+    }
+    .fa-address-card,.fa-envelope,.fa-phone{
+        font-size: 30px;
+        margin-right: 20px;
+       
+    }
          
+    .right{
+        background-color: white;
+        width: 50%;
+    }
+    .fill{
+        /* border: 2px solid black; */
+        color: black;
+        height: 300px;
+        width: 90%;
+        margin: 15px auto;
+        
+    }
+    .input{
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        width: 100%;
+        line-height: 40px;
+    }
+    .input:focus {
+  outline: none; /* Removes the default browser outline */
+  /* border: none; Removes the border */
+}
+
+
+.faq-icon{
+    
+}
+.send{
+    background: url(img/contact.png) no-repeat;
+    margin: 50px 15%;
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 5px;
+
+} 
+.faq-section{
+    background-color: white;
+    width:100%;
+    padding: auto;
+    height: 450px;
+
+}  
+.faq-section h1,.faq-section p{
+    text-align: center;
+    margin-top: 20px;
+}
+.fcontainer{
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 79%;
+    margin: 30px auto;
+    height: 450px;
+    
+}
+.f-1{
+    display: flex;
+   flex-direction: column;
+    background-color: #b0e6fa;
+    border-radius: 15px;
+    opacity: 0.7;
+    width: 300px;
+    height: 210px;
+    padding: 20px;
+
+}
+.fa-circle-info{
+ margin-top: 10px;
+ background-color: blue;
+ color: white;
+ opacity: 0.7;
+
+}
+.faqwriteup{
+    margin-bottom: 225px;
+    line-height: 20px;
+    text-align: right;
+}
     </style>
 </head>
 <body>
         <div class="header">
             <div class="nav-bar">
                 <ul class="nav">
-                        <li class="list1">contact</li>
-                        <li class="list1">aabout us</li>
-                        <li class="list1">information</li>
-                        <li class="list1" id="faq">faq</li>
+                        <li class="list1 transition"><a href="#contact">contact</a></li>
+                        <li class="list1 transition"><a href="#about-us">about us</a></li>
+                        <li class="list1 transition"><a href="#information">information</a></li>
+                        <li class="list1 transition"><a href="#FAQ">FAQ</a></li>
                     
                  </ul> 
             </div>
@@ -114,27 +295,104 @@
             <div class="header-content">
                 <h1>welcomt to our new wevsite, is important you know abt us <p>dont you want to work with us</p></h1>
             </div>
+            <button class="btn transition">learn more</button>
         </div>
         <div class="content2">
-             <h1>this is our profiles</h1>
-                <p>Loremm non libero iure officiis beatae eos
+             <h1 class="animation">this is our profiles</h1>
+                <p>Loremm non libero iure officiis beatae eos</p>
 
           
-            <div class="box">
-                <div class="box1">welcome</div>
-                <div class="box1">welcome</div>
-                <div class="box1">welcome</div>
-                <div class="box1">welcome</div>
-                <div class="box1">welcome</div>
-                <div class="box1">welcome</div>
-                <div class="box1">welcome</div>
-                <div class="box1">welcome</div>                
+            <div class="box" id="about-us">
+                <div class="box1 transition">welcome</div>
+                <div class="box1 transition">welcome</div>
+                <div class="box1 transition">welcome</div>
+                <div class="box1 transition">welcome</div>
+                <div class="box1 transition">welcome</div>
+                <div class="box1 transition">welcome</div>
+                <div class="box1 transition">welcome</div>
+                <div class="box1 transition">welcome</div>
+                               
             </div>
         </div>
        <div class="footer">
-       <div class="foot">welcom</div>
-       <div class="foot">welcome</div>
+        <div class="foot">welcom</div>
+        <div class="foot">welcome</div>
 
        </div>
+       <div class="cont-us" id="contact">
+            <div class="one">
+                <h1>contact us</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione numquam doloribus facilis reiciendis aperiam dolores commodi possimus, iure est delectus blanditiis quas tempore quam doloremque et suscipit impedit!<br> Est nemo sit quod dolor dolorem porro velit, omnis repellendus incidunt laudantium totam libero tempora. Cum molestiae quia recusandae quibusdam officia perferendis.</p>
+            </div>
+            <div class="cont">
+                <div class="left">
+                    <div class="address">
+                        <i class="fa-solid fa-address-card cont-icon""></i>
+                        <address class="line-height">Address <br> 348 felele road,<br>abuja logos,<br>kogi.</address>                        
+                    </div>
+                    <div class="phone line-height address ">
+                        <i class="fa-solid fa-phone cont-icon""></i>
+                        <p>Phone <br>08024838290</p>
+                       
+                    </div>
+                    <div class="line-height address">
+                        <i class="fa-solid fa-envelope cont-icon"></i>
+                        <p>Email <br>Rufisadminl@gamil.com</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="fill">
+                        <h1>send message</h1>
+                        <form action="#"> 
+                            
+                            <input type="text" class="input" placeholder="type your name here">
+                            <input type="text" class="input" placeholder="type your name here">
+                            <input type="email" class="input" placeholder="type your email here">
+                           
+                        </form>
+                        <button class="send"><a href="#">send</a></button>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+       <div class="faq-section" id="FAQ">
+            <h1>frequently asked question</h1>
+            <p>ectetur adipisicing elit. Repudiandae illo ea doloribus tenetur labore odio fugit veniam iusto vitae quo!
+            </p>
+            <div class="fcontainer">
+                <div class="f-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  <p class="faqwriteup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat delectus quibusdam cupiditate namdelectus quibusdam cupiditate nam </p>
+                 </div>
+                <div class="f-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  <p class="faqwriteup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat delectus quibusdam cupiditate namdelectus quibusdam cupiditate nam </p>
+                 </div>
+                <div class="f-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  <p class="faqwriteup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat delectus quibusdam cupiditate namdelectus quibusdam cupiditate nam </p>
+                 </div>
+                <div class="f-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  <p class="faqwriteup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat delectus quibusdam cupiditate namdelectus quibusdam cupiditate nam </p>
+                 </div>
+                <div class="f-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  <p class="faqwriteup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat delectus quibusdam cupiditate namdelectus quibusdam cupiditate nam </p>
+                 </div>
+                <div class="f-1">
+                    <i class="fa-solid fa-circle-info"></i>
+                  <p class="faqwriteup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat delectus quibusdam cupiditate namdelectus quibusdam cupiditate nam </p>
+                 </div>
+                
+               
+                
+               
+               
+            </div>
+        </div>   
+
 </body>
 </html>
