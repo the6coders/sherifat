@@ -1,7 +1,14 @@
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid red;
 }
 a:any-link{
     color: blue;
@@ -90,30 +97,33 @@ body h1{
    width: 70%;
    margin: 50px auto;
    line-height: 30px;
+   
 }
 .our-service-cont h1{
     margin-bottom: 30px;
 }
 .main-service-cont{
-    width: 100%;
+    /* border: 1px solid green; */
     max-height: fit-content;
     background-color: whitesmoke;
     
 }
-.list-cont, .our-latest{
+.list-cont{
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
+    flex: 0 1 auto;
     flex-wrap: wrap;
     width: 82%;
     margin:20px auto;
 }
+
 .service , .article{
     background-color: white;
     width: 320px;
     height: 270px;
-    margin: 15px;
-    padding: 10px;
-    line-height: 25px;
+    margin: 1.05rem;
+    padding: 1rem;
+    line-height: 1.5rem;
     border-radius: 20px;
 }
 .service h1, p{
@@ -135,12 +145,18 @@ body h1{
     line-height: 30px;
 }
 .customer-saying-cont{
-    width: 850px;
-    height:300px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: fit-content;
+    width: 70%;
     margin: auto;
     border-radius: 15px;
+    background-color: rgb(81, 119, 243);
+    color: white;
+    padding: 1.1rem 1em 1.3rem;
 }
-.blue-color, .customer-saying-cont{
+.blue-color{
     background-color: rgb(81, 119, 243);
     color: white;
     padding: 20px 45px;
@@ -153,14 +169,16 @@ body h1{
 .customer-saying{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 180px;
-    column-gap: 150px;
-    line-height: 25px;   
+    font-size: 0.9rem;
+    line-height: 1.4rem;   
 }
 .customer-identity{
     display: flex;
     align-items: center;
-    column-gap: 13px;
+    flex-direction: row-reverse;
 }
 .customer-identity .p{
     display: flex;
@@ -170,6 +188,11 @@ body h1{
     height: 90px;
     border-radius: 50%;
     background-color: white;
+}
+.customer-talk{
+    padding: 5%;
+    text-align: center;
+    width: 100%;
 }
 .our-latest-cont{
     background-color: whitesmoke;
@@ -181,29 +204,55 @@ body h1{
 .our-latest-cont h1{
     text-align: center;
 }
+.our-latest{
+    border: 1px solid green;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:20px auto;
+    padding: 0.51rem;
+}
 .article{
     height: fit-content;
-    padding-bottom: 25px;
+    /* flex-basis: 100%; */
+    flex: 1;
+    min-width: 200px;
+    /* padding: 1.5%; */
+
 }
 .article img{
     width: 100%;
     border-radius: 15px 15px 0px 0px;    
 }
 .article h4, p, a{
-    margin: 20px;
+    margin: 4%;
     text-decoration: none;
 }
 .footer{
    display: flex; 
-   margin-top: 120px;
+   justify-content: space-between;
+   margin-top: 80px;
    flex-wrap: wrap;
-   column-gap: 100px;
+   column-gap: 60px;
    padding: 60px 50px;
 }
+.Trafalgar{
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    /* flex: 1; */
+}
+.footer_f{
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 50px;
+    flex: 1;
+}
 .Trafalgar p{
-    margin-left: 90px;
-    width: 350px;
-    line-height: 30px;
+    margin-left: 70px;
+    max-width: 289px;
+    line-height: 30px;    
 }
 .white-bg{
     background-color: white;
@@ -211,6 +260,42 @@ body h1{
 }
 .bold{
     font-weight: bold;
+}
+@media(max-width:1113px){
+    .header .nav-bar a{
+        color: red;
+        font-size: 15px;
+    }   
+    .rightfcont{
+        width: 200px;
+    }
+}
+@media(max-width:800px){
+    .article{
+        color: red;
+        font-size: 0.7em;
+       
+
+    }
+    .article a{
+        display: none;
+    }
+}
+@media(max-width:769px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        flex-wrap: wrap;
+        
+    }
+    .footer_f{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.2rem;
+        column-gap: 7rem;
+    }
 }
 
 
