@@ -139,7 +139,7 @@ a:hover{
 }
 .img{
   @apply  rounded-2xl h-[45vh] 
-          bg-no-repeat bg-cover bg-center max-md:h-[150px]; 
+          bg-no-repeat bg-cover bg-center max-md:h-[120px]; 
 }
 .img-1{
   @apply bg-[url('imgg/arabiyah-1.jpg')] 
@@ -273,5 +273,6 @@ a:hover{
            hover:bg-blue-400 rounded transition duration-100 ease-in-out 
            cursor-pointer
 }
+
 
 }
