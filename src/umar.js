@@ -175,7 +175,7 @@ function concle() {
     body.style.pointerEvents = "auto"; // enables clicks
 }
 
-function changeBackGround(){ 
+function changeBackGround(){
 
     if(chance.style.backgroundColor =="white"){
         chance.style.backgroundColor ="black";

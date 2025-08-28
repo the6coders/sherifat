@@ -46,7 +46,7 @@ a:hover{
 .hero_section{
   @apply bg-[url('imgg/hero_3.jpg')] bg-cover bg-center 
 
-        overflow-hidden h-[9rem] max-md:h-[30rem] relative        
+        overflow-hidden h-[39rem] max-md:h-[30rem] relative        
 
 }
 .up_nav_link{
@@ -103,8 +103,8 @@ a:hover{
 }
 .hero_page_content{
   @apply font-bold text-4xl text-white mt-17 max-md:mt-15
-          absolute z-10 text-center  w-5xl leading-20 max-md:leading-15
-          max-lg:text-2xl max-md:text-xl max-md:px-10
+          absolute z-10 text-center leading-20 max-md:leading-12
+          max-lg:text-2xl max-md:text-sm md:px-10
 }
 .guestname{
   @apply mt-15 py-0  w-sm mx-auto flex justify-between pl-3;
