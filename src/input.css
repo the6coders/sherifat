@@ -46,7 +46,7 @@ a:hover{
 .hero_section{
   @apply bg-[url('imgg/hero_3.jpg')] bg-cover bg-center 
 
-        overflow-hidden h-[39rem] max-md:h-[30rem] relative        
+        overflow-hidden h-[49rem] max-md:h-[30rem] relative        
 
 }
 .up_nav_link{
