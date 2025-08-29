@@ -555,14 +555,11 @@
   }
   .hero_section {
     position: relative;
-    height: 9rem;
+    height: 30rem;
     overflow: hidden;
     background-image: url('imgg/hero_3.jpg');
     background-size: cover;
     background-position: center;
-    @media (width < 48rem) {
-      height: 30rem;
-    }
   }
   .up_nav_link {
     position: sticky;
