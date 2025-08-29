@@ -555,7 +555,7 @@
   }
   .hero_section {
     position: relative;
-    height: 39rem;
+    height: 9rem;
     overflow: hidden;
     background-image: url('imgg/hero_3.jpg');
     background-size: cover;
