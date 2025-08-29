@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+ 
+</head>
+<body class="relative z-40">
+  <div class="sections_container">
+    <div id="hide" class="opacity_dark opacity-85"></div>
+    <div class="hero_section relative" id="home">
+
+      <div id="up_nav" class="up_nav_link">
+        <div class="up_navright"> 
+          <p id="names">your name should appear here</p> 
+            
+          
+          <p class="second" id="type"></p>        
+          
+        </div>
+        
+           <div class="social_links">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/2349133750520"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>      
+        
+      </div>
+
+      <div id="heroNavBar" class="hero_nav_bar">
+        <div class="logo_nd_txt">
+          <img src="imgg\shc_icon-removebg-preview.png" alt="school logo">
+      
+          <h3 class="logo_text">UMAR BN KHaTTOB <br><span class="">institute</span></h3>
+        </div>
+       
+        <ul class="nav_bar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <!-- <li><a href="#program">program</a></li> -->
+          <li><a href="#why_choose">why_us</a></li>
+          <li><a href="gallary">gallery</a></li>
+          <li><a href="#contact_us">contact_us</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+
+       
+        <ul id="dropMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <!-- <li><a href="#program">program</a></li> -->
+          <li><a href="#why_choose">why_us</a></li>
+          <li><a href="gallary">gallery</a></li>
+          <li><a href="#contact_us">contact_us</a></li>
+        </ul>
+      </div>
+       
+      <div id="chance" class="pop-up animate-square-in-center  animate-quare-out-center"> 
+        
+        <p class="mb-20" id="leng">
+          Assalamu Alaikum   <span id="copyy"> </span> <br> 
+          We appreciate your desire to join Umar Bn khattob family. 
+          Our admissions portal is currently paused as we prepare for an enhanced 
+          application experience. We expect to resume accepting applications shortly, 
+          by the Grace of Allah (SWT).
+        </p> <br>
+       
+        <button id="click" onclick="concle()" class="cancle_btn">cancle</button>
+        <button id="changebg" class="changebg">turnColor</button>
+
+      </div>
+        
+      <div class="hero_page_content center-x-y-absolute">
+      
+
+        <h1 class="capitalize">umar bn khattob school for Arabic and Islamic studies</h1>
+        <p class="capitalize max-md:leading-5.5">knowledge <span class="lowercase">is the </span> soul of sunnah</p>
+        <p class="text-xl font-bold lg:mt-10 max-md:mt-10 max-md:font-serif">Where Arabic Mastery Meets Islamic Wisdom</p>
+        <div class="hero_page_bottome_content">
+          <div class="btn guestname pr-0.5 py-0.5 bg-white text-black">
+            <div></div>
+            <input type="text" name="full-Name" id="welcomeName"
+                  placeholder="pls Enter your name here"
+                  class="bottom_border_style border-0 mr-2">
+
+                  <button class="submitname cursor-pointer" id="submitName">
+                    <a href="#" class="hover:text-blue-900">submit</a>
+                  </button> 
+          </div>
+            
+            <button class="btn px-10 py-2" onclick="changeDark()">
+            <a href="#" class="hover:text-blue-900">Apply Now </a>
+          </button> 
+
+           
+        </div>
+         
+      </div>
+      <div class="opacity_dark"></div>
+      
+     
+    </div>   
+
+    <div class="about_section animate-square-in-center" id="about">
+      <div class="aboutus_section">
+        <div class="about_us_header">who we are</div>
+        
+          <div class="about_us">
+            <div class="first">
+              <div class="img img-1">
+                
+              </div>
+              <div>
+                <p class="title">
+                    Arabi Learning
+                </p>
+                <p class="test">
+                    Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Maiores eius, excepturi 
+                    voluptates explicabo unde molestiae veniam.
+                </p>
+              </div>
+              <button class="first-btn btn-1" id="same">
+                
+                    <a href="#">click to more 
+                      <i class="fa-solid fa-arrow-right hover:text-black text-lg"></i>
+                    </a>
+
+                </button>
+              
+            </div>
+            <div class="first">
+              <div class="img img-2">
+                
+              </div>
+              <div>
+                <p class="title">
+                    Arabic Learning
+                </p>
+                <p class="test">
+                    Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Maiores eius, excepturi 
+                    voluptates explicabo unde molestiae veniam.
+                </p>
+              </div>
+              <button class="first-btn btn-1">
+                
+                    <a href="#">click to more 
+                      <i class="fa-solid fa-arrow-right hover:text-black text-lg"></i>
+                    </a>
+
+                </button>
+              
+            </div>
+            <div class="first">
+              <div class="img img-3">
+                
+              </div>
+              <div>
+                <p class="title">
+                    Arabic Learning
+                </p>
+                <p class="test">
+                    Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Maiores eius, excepturi 
+                    voluptates explicabo unde molestiae veniam.
+                </p>
+              </div>
+              <button class="first-btn btn-1">
+                
+                    <a href="#">click to more 
+                      <i class="fa-solid fa-arrow-right hover:text-black text-lg"></i>
+                    </a>
+
+                </button>
+              
+            </div>
+
+          </div>     
+
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="why_choose" id="why_choose">
+      <div class="left_side content max-lg:order-2">
+        <div class="left_side_up">
+          <h1>requirment</h1>
+          <ul>
+            <li>nahw</li>
+            <li>sure</li>
+            <li>tahfeex</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfif</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfsf</li>
+          </ul>
+        </div>
+        <div class="left_side_down">
+          <h1>ARRANGEKLFGJ</h1>
+           <ul>
+            <li>nahw</li>
+            <li>sure</li>
+            <li>tahfeex</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfif</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfif</li>
+          </ul>
+        </div>    
+      </div>
+      <div class="center_side">
+        
+          <div class="center_header1"></div>
+          <div class="center_header2"></div>
+          <div class="img_one">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Iure mollitia amet magnam numquam necessitatibus natus autem 
+              vero, aliquid voluptatum praesentium rerum? Sapiente nesciunt
+               accusamus in voluptate sunt, voluptas maxime eveniet harum 
+               possimus pariatur repellat doloremque velit animi dicta quasi
+               atque est, deserunt aspernatur sint mollitia ab. Error corrupti
+                illum ex?
+              </p>
+          </div>
+          <!-- <div class="img_two"></div> -->
+          <div class="text_one">
+                      
+             
+            </video>
+          </div>
+          <div class="text_two">
+            <video src="videos\toolib.mp4" class="h-full w-full col-span-2  shadow-md bg-gray-500" controls></video>
+          </div>
+
+      </div>
+      <div class="right_side content">
+        <div class="right_side_up">
+          <h1>requirment</h1>
+          <ul>
+            <li>nahw</li>
+            <li>sure</li>
+            <li>tahfeex</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfif</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfif</li>
+          </ul>
+        </div>
+        <div class="right_side_down">
+          <h1>ARRANGEKLFGJ</h1>
+           <ul>
+            <li>nahw</li>
+            <li>sure</li>
+            <li>tahfeex</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfif</li>
+            <li>queran</li>
+            <li>memojs</li>
+            <li>sljfif</li>
+          </ul>
+        </div>    
+      </div>
+      </div>
+    </div>    
+
+    <div id="contact_us" class="Contact-us_section relative h-[39rem] overflow-hidden">
+
+      <div id="succeffulMessege" class="succeffulMessege absolute left-20 top-50 z-10 hidden"> 
+        
+            <p class="mb-20" >
+                dddddd
+            </p>
+            <button id="click" onclick="concle()" class="cancle_btn">cancle</button>
+          </div>
+
+      
+      <!-- <div class="opacity_dark opacity-85"></div>  -->
+      <div class="contact_container  center-x-absolute text-black ">
+
+        <div class="contact_header px-10 ">
+          <h1 class="mb-6 md:text-3xl  max-md:text-xl  font-extrabold tracking-wider">contact us</h1>
+          <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore et
+             doloribus eveniet recusandae sequi fugit, cupiditate sit repellendus voluptates 
+             animi unde facere laborum adipisci vitae enim, explicabo delectus sapiente eaque.
+            </p>
+        </div>
+        <div class="contact_body">
+          
+          <div class="adress flex items-center  space-x-5">
+            <i class="fa-regular fa-address-book footer_icons"></i>
+            
+            <p><span class="blue_color">Address</span><br> oboroke ihima, <br> kogi-state ,<br>number 10.</p>
+          </div>
+          <div class="phone flex items-center  space-x-5">
+            <i class="fa-solid fa-phone-volume footer_icons"></i>
+            
+            <p><span class="blue_color">Phone</span> <br> 093084884839</p>
+          </div>
+          <div class="Email flex  items-center space-x-5">
+            <i class="fa-regular fa-envelope footer_icons"></i>
+           
+            <p> <span class="blue_color">Email</span><br> rufisdata@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact_body contact_body_right sm: hidden">
+          <h1 class="text-2xl font-bold tracking-wider">Send Message</h1>
+          <form action="">
+            <div class="full-Name mb-6">
+              <input type="text" name="full-Name" id="full-Name"
+                    placeholder="Enter your full_Name here"
+                    class="bottom_border_style">
+            </div>
+
+            <div class="email mb-6"> <input type="email" name="email" id="email"
+                    placeholder="enter ur email here"
+                    class="bottom_border_style">
+            </div>
+
+            <div class="message ">
+              <textarea id="message" name="user_message" rows="2" cols="10"
+                        placeholder="Type your message here..."
+                        class="bottom_border_style"></textarea>
+            </div>
+            <button type="submit" class="submit" id="submit" onclick="submitInput()">Send Message</button>
+          </form>      
+
+      </div>
+          
+        </div>
+          
+      </div>      
+      
+    </div>
+
+
+  </div>
+  <div class="footer_section">
+    
+    <!-- div.up_footer>.cont.cont${cont$}*4 -->
+    <div class="up_footer">
+      <div class="cont cont1">
+        <h1 class="font-extrabold text-sky-300 text-2xl capitalize">umar bn khattob</h1>
+        <p class="leading-normal mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            odit animi repellendus est explicabo unde!
+        </p>
+      </div>
+      <div class="cont cont2">
+        <p class="right_border">link</p>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">program</a></li>
+          <li><a href="#">why_us</a></li>
+        </ul>
+      </div>
+      <div class="cont cont3">
+         <p class="right_border">others</p>
+        <ul>
+          <li><a href="#">terms of service</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">contact_us</a></li>
+          <li><a href="#">gallary</a></li>
+        </ul>
+      </div>
+      <div class="cont cont4">
+        <p class="right_border">others</p>
+        <p>follow us on social media</p>
+        <div class="max-sm:flex">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/2349054916257"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="down_footer">
+      <div class="down down1">&copy; 2026, Umar Bn khattob. All rights reserved.</div>
+      <div class="down down2">Alhamdulillah</div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="umar.js"></script>
+
+</body>
+ 
+ 
+
+
+
+
