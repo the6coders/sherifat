@@ -193,13 +193,15 @@ let submitName = document.getElementById('submitName');
 let names = document.getElementById('names');
 let welcomeNameInput = document.getElementById('welcomeName');
 let copyy = document.getElementById("copyy"); 
+let disapear = document.getElementById("disapear")
 
 function clientName(userName){
     if(!userName){
         return window.alert("please enter your name");
     }
     else {
-        return names.innerHTML = "welcome" + " " + userName;
+        names.innerHTML = "welcome" + " " + userName;
+        disapear.style.display = "none";
     }
     
 }

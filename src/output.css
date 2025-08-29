@@ -8,6 +8,8 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-red-900: oklch(39.6% 0.141 25.723);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-sky-800: oklch(44.3% 0.11 240.79);
@@ -555,11 +557,14 @@
   }
   .hero_section {
     position: relative;
-    height: 30rem;
+    height: 39rem;
     overflow: hidden;
     background-image: url('imgg/hero_3.jpg');
     background-size: cover;
     background-position: center;
+    @media (width < 48rem) {
+      height: 30rem;
+    }
   }
   .up_nav_link {
     position: sticky;
@@ -1009,6 +1014,49 @@
   }
   .text_two {
     border-radius: var(--radius-2xl);
+  }
+  .our-service-container {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+    border-color: var(--color-black);
+    padding-inline: calc(var(--spacing) * 10);
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .our-service-header {
+    margin-inline: auto;
+    text-align: center;
+  }
+  .our-service-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: calc(var(--spacing) * 20);
+    row-gap: calc(var(--spacing) * 10);
+    padding-block: calc(var(--spacing) * 10);
+    text-align: center;
+    @media (width < 48rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .content i,.content h1 {
+    margin-bottom: calc(var(--spacing) * 3);
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+    color: var(--color-blue-700);
+  }
+  .content i {
+    border-top-left-radius: calc(infinity * 1px);
+    border-top-right-radius: calc(infinity * 1px);
+    border-top-right-radius: calc(infinity * 1px);
+    border-bottom-right-radius: calc(infinity * 1px);
+    border-top-style: var(--tw-border-style);
+    border-top-width: 4px;
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 5px;
+    border-color: var(--color-blue-900);
+    border-right-color: var(--color-red-800);
+    background-color: var(--color-red-900);
+    padding: calc(var(--spacing) * 5);
   }
   .Contact-us_section {
     position: relative;
