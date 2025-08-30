@@ -209,10 +209,13 @@ a:hover{
          text-center 
 }
 .content i,.content h1{
-  @apply text-white mb-3 font-serif text-xl 
+  @apply mb-3 font-serif text-xl 
+}
+.content h1{
+  @apply text-blue-900;
 }
 .content i{
-  @apply bg-red-900 border-blue-900 border-b-5 border-t-4 border-r-red-800 p-5 rounded-r-full rounded-t-full
+  @apply bg-red-900 text-white border-blue-900 border-b-5 border-t-4 border-r-red-800 p-5 rounded-r-full rounded-t-full
 }
 .Contact-us_section{
   @apply bg-gray-200 p-10 relative
