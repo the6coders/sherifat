@@ -209,15 +209,11 @@ a:hover{
   @apply grid grid-cols-3 gap-x-20 gap-y-10 max-md:grid-cols-1 py-10
          text-center 
 }
-.service-content{
-  @apply shadow-blue-400 shadow-md py-3 hover:scale-x-104 hover:scale-y-104 hover:bg-gray-200 hover:transition-all duration-800 ease-in-out
+.content i,.content h1{
+  @apply text-blue-700 mb-3 font-serif text-xl 
 }
-.service-content i,.service-content h1{
-  @apply text-blue-700  mb-3 font-serif text-xl max-md:text-sm
-}
-.service-content i{
-  @apply bg-blue-600 text-white border-blue-900 border-b-5 border-t-4
-          p-5 max-md:text-sm shadow-gray-600 rounded-t-full
+.content i{
+  @apply bg-red-900 border-blue-900 border-b-5 border-t-4 border-r-red-800 p-5 rounded-r-full rounded-t-full
 }
 .Contact-us_section{
   @apply bg-gray-200 p-10 relative
