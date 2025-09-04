@@ -122,7 +122,7 @@ a:hover{
           max-lg:text-2xl max-md:text-lg max-md:px-2 max-md:pb-20 
 }
 .guestname{
-  @apply mt-15 max-md:mt-3 py-0  w-sm mx-auto flex justify-between pl-3;
+  @apply mt-15 max-md:mt-3 py-0  w-70 mx-auto flex justify-between pl-3;
 }
 .submitname{
   @apply  bg-blue-500 text-white px-2 py-1  rounded;
@@ -184,7 +184,7 @@ a:hover{
 }
 .why_choose{
   @apply grid lg:grid-cols-[1fr_3fr_1fr] lg:p-15 gap-5
-          max-lg:grid-cols-[5fr_1.5fr] max-lg:p-10 
+          max-lg:grid-cols-[5fr_1.5fr]   max-md:p-5
 }
 .left_side , .right_side{
   @apply grid lg:grid-cols-1 gap-y-3 
