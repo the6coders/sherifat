@@ -103,12 +103,22 @@ a:hover{
     right: 0; /* Slide the menu into view when the .active class is present */
 }
 
-.off-screen-menu ul {
+/* .off-screen-menu ul {
     @apply pt-10;
-}
+} */
 
 .fa-xmark {
     @apply text-white text-2xl absolute right-5;
+}
+.aside-menu {
+  @apply w-5/6 text-center pt-10
+}
+.aside-menu li{
+  @apply pt-5 border-b-white border-b-1 border-0 hover:border-0 
+        
+}
+.aside-menu li a{
+  @apply hover:text-blue-600 hover:bg-yellow-500
 }
 
 .home{
