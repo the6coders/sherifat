@@ -99,38 +99,25 @@ var chance = document.getElementById('chance');
   document.addEventListener('DOMContentLoaded', fixedHeroSectWhenScrolled);
 
 
-// script for when toggleMenu is click it bring the dropMenu -->
+// // script for when toggleMenu is click it bring the dropMenu -->
 
-    let dropMenu = document.getElementById('dropMenu');
-    
-    // Set initial state and transition property
-    dropMenu.style.maxHeight = "0px";
-    dropMenu.style.display = "none";
-    
-    // Add the transition property directly via JavaScript
-    // This is less ideal than putting it in CSS
-    dropMenu.style.transition = "max-height 0.3s ease-out, opacity 0.3s ease-out";
-    // dropMenu.style.overflow = "hidden"; // Also crucial for the effect
-    dropMenu.style.opacity = "0";
+let offScreenMenu = document.querySelector(".off-screen-menu");
+let hamburger = document.querySelector(".hamburger");
+let fa_xmark = document.querySelector(".fa-xmark");
+ 
+function toggleMenu() {
+    offScreenMenu.classList.toggle('active');
+}
 
-    function toggleMenu() {
-        if (dropMenu.style.maxHeight == "0px") {
-            dropMenu.style.display = "block"; // Make it block before animating
-            dropMenu.style.maxHeight = dropMenu.scrollHeight + "px"; // Or a fixed "300px"
-            dropMenu.style.opacity = "1"; // Fade in
-        } else {
-            dropMenu.style.maxHeight = "0px";
-            dropMenu.style.opacity = "0"; // Fade out
+function gone() {
+    offScreenMenu.classList.remove('active');
+}
 
-            // Listen for the end of the transition before setting display: none
-            dropMenu.addEventListener('transitionend', function handler() {
-                if (dropMenu.style.maxHeight == "0px") {
-                    dropMenu.style.display = "none";
-                }
-                dropMenu.removeEventListener('transitionend', handler);
-            });
-        }
-    }
+hamburger.addEventListener("click", toggleMenu);
+fa_xmark.addEventListener("click", gone);
+
+//menu ends here
+
 
     
     var hide = document.getElementById("hide");
@@ -164,6 +151,9 @@ function changeDark() {
     body.style.overflow = "hidden"; // Prevents scrolling
 }
 
+//concelling the apply now pop up
+let cancle_btn = document.querySelector(".cancle_btn");
+
 function concle() {
     // Hide the pop-up
     chance.style.display = "none";
@@ -174,23 +164,18 @@ function concle() {
     body.style.overflow = "auto"; // Or "initial" or "" to revert to default
     body.style.pointerEvents = "auto"; // enables clicks
 }
+cancle_btn.addEventListener("click", concle);
+
 
 function changeBackGround(){ 
-
-    if(chance.style.backgroundColor =="white"){
-        chance.style.backgroundColor ="black";
-        chance.style.color = "white";        
-    }
-    else {
-         chance.style.backgroundColor ="white";
-         chance.style.color = "black";  
-    }
-        
+     chance.classList.toggle('active');        
 }
-        changebg.addEventListener("click" , changeBackGround);
+     changebg.addEventListener("click" , changeBackGround);
+
     
 let submitName = document.getElementById('submitName');
 let names = document.getElementById('names');
+let nameagain = document.getElementById("nameagain")
 let welcomeNameInput = document.getElementById('welcomeName');
 let copyy = document.getElementById("copyy"); 
 let disapear = document.getElementById("disapear")
@@ -200,7 +185,7 @@ function clientName(userName){
         return window.alert("please enter your name");
     }
     else {
-        names.innerHTML = "welcome" + " " + userName;
+        names.innerHTML = "Hi" + " " + userName;
         disapear.style.display = "none";
     }
     
@@ -210,6 +195,7 @@ submitName.addEventListener("click", function(){
     let updatName = welcomeNameInput.value;
         welcomeNameInput.value = null;
         copyy.innerHTML = updatName + ",";
+         nameagain.innerHTML = "Hi"+ " " + copyy.innerHTML;
     clientName(updatName);
 });
 

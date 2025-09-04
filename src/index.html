@@ -14,13 +14,7 @@
     <div class="hero_section relative" id="home">
 
       <div id="up_nav" class="up_nav_link">
-        <div class="up_navright"> 
-          <p id="names">your name should appear here</p> 
-            
-          
-          <p class="second" id="type"></p>        
-          
-        </div>
+        
         
            <div class="social_links">
           <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
@@ -35,6 +29,10 @@
       <div id="heroNavBar" class="hero_nav_bar">
         <div class="logo_nd_txt">
           <img src="imgg\shc_icon-removebg-preview.png" alt="school logo">
+
+            
+          <p id="names">Hi.......</p>      
+          
       
           <h3 class="logo_text">UMAR BN KHaTTOB <br><span class="">institute</span></h3>
         </div>
@@ -48,22 +46,28 @@
           <li><a href="#contact_us">contact_us</a></li>
         </ul>
 
-        <div class="hamburger">
-          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-        </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="off-screen-menu" id="off-screen-menu">
+        <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+        <p id="nameagain" class="absolute left-2">Hi.......</p>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#why_choose">why_us</a></li>
+        <li><a href="gallary">gallery</a></li>
+        <li><a href="#contact_us">contact_us</a></li>
+      </ul>
+
+    </div>
 
        
-        <ul id="dropMenu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">about</a></li>
-          <!-- <li><a href="#program">program</a></li> -->
-          <li><a href="#why_choose">why_us</a></li>
-          <li><a href="gallary">gallery</a></li>
-          <li><a href="#contact_us">contact_us</a></li>
-        </ul>
       </div>
        
-      <div id="chance" class="pop-up animate-square-in-center  animate-quare-out-center"> 
+      <div id="chance" class="pop-up animate-square-in-center center-x-absolute  animate-quare-out-center"> 
         
         <p class="mb-20" id="leng">
           Assalamu Alaikum   <span id="copyy"> </span> <br> 
@@ -73,12 +77,12 @@
           by the Grace of Allah (SWT).
         </p> <br>
        
-        <button id="click" onclick="concle()" class="cancle_btn">cancle</button>
+        <button id="click" class="cancle_btn">cancle</button>
         <button id="changebg" class="changebg">turnColor</button>
 
       </div>
         
-      <div class="hero_page_content center-x-y-absolute">
+      <div class="hero_page_content md:mx-auto w-full">
       
 
         <h1 class="capitalize">umar bn khattob school for Arabic and Islamic studies</h1>

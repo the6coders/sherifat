@@ -64,9 +64,9 @@ a:hover{
   @apply max-lg:hidden
 }
 .hero_nav_bar{
-  @apply flex justify-between absolute z-30 w-full px-20 
+  @apply flex justify-between absolute z-30 w-full px-20 max-md:px-5 
          md:pr-2  text-gray-700 lg:rounded-b-2xl items-center space-x-20
-          py-2 bg-gray-300 shadow-2xl 
+          py-0 bg-gray-300 
 }
 .logo_text{
   @apply text-xl  font-bold uppercase leading-relaxed
@@ -89,13 +89,28 @@ a:hover{
   @apply md:hidden 
 }
 .hamburger i{
-  @apply text-blue-600 text-2xl cursor-pointer absolute top-7 right-10    
+  @apply text-blue-600 text-2xl cursor-pointer absolute top-5 right-10    
           
 }
-#dropMenu{
-  @apply absolute top-20 right-0 left-0 bg-gray-200
-          text-center text-xl max-lg:top-17    
+.off-screen-menu {
+    @apply bg-blue-950 h-full w-full max-w-75 fixed top-0
+           flex flex-col items-center pt-5 text-white capitalize
+           transition-all duration-300 ease-in-out -right-75;
+     /* Initially hide the menu off-screen to the right */
 }
+
+.off-screen-menu.active {
+    right: 0; /* Slide the menu into view when the .active class is present */
+}
+
+.off-screen-menu ul {
+    @apply pt-10;
+}
+
+.fa-xmark {
+    @apply text-white text-2xl absolute right-5;
+}
+
 .home{
   @apply bg-gray-700 py-1 px-4 rounded-full 
   border-sky-800 text-white hover:bg-sky-800
@@ -279,10 +294,13 @@ a:hover{
 }
 
 .pop-up{
-  @apply bg-white rounded-2xl border-2 border-blue-500 text-lg fixed top-40 right-30 z-50
-       max-md:w-3/6 max-md:text-sm max-lg:w-4/6 lg:w-5/6 mx-auto hidden max-lg:top-20
-       overflow-hidden text-center p-5 leading-9 max-md:p-2
+  @apply bg-white rounded-2xl border-2 border-blue-500 text-lg top-40  z-50
+       max-md:w-5/6 max-md:text-sm max-lg:w-4/6 lg:w-5/6 hidden max-lg:top-20
+       overflow-hidden text-center p-5 leading-9 max-md:p-2 max-md:mx-auto absolute
        
+}
+.pop-up.active{
+  @apply bg-black text-white;
 }
 .succeffulMessege{
   @apply  bg-white rounded-2xl border-2 border-blue-500 text-lg fixed top-40 right-30 z-50
