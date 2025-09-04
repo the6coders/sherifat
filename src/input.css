@@ -115,10 +115,11 @@ a:hover{
 }
 .aside-menu li{
   @apply pt-5 border-b-white border-b-1 border-0 hover:border-0 
+          hover:rounded-sm
         
 }
 .aside-menu li a{
-  @apply hover:text-blue-600 hover:bg-yellow-500
+  @apply hover:text-blue-600 
 }
 
 .home{
@@ -266,6 +267,7 @@ a:hover{
 }
 .contact_body_right{
   @apply bg-white p-5 text-black rounded-2xl text-center
+          max-md:hidden
 }
 .bottom_border_style{
   @apply border-b-2 border-black w-full focus:outline-none focus:border-blue-500 pb-1
