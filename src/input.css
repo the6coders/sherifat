@@ -24,7 +24,7 @@ a:hover{
 
 }
 .opacity_dark{
-  @apply absolute inset-0 bg-black opacity-45;
+  @apply absolute inset-0 bg-green-900 opacity-15;
 }
 .center-x-absolute{
   @apply  left-1/2 -translate-x-1/2
@@ -66,7 +66,7 @@ a:hover{
 .hero_nav_bar{
   @apply flex justify-between absolute z-30 w-full px-20 max-md:px-5 
          md:pr-2  text-gray-700 lg:rounded-b-2xl items-center space-x-20
-          py-0 bg-gray-300 
+          py-0 bg-white border-t-2 overflow-hidden 
 }
 .logo_text{
   @apply text-xl  font-bold uppercase leading-relaxed
@@ -93,7 +93,7 @@ a:hover{
           
 }
 .off-screen-menu {
-    @apply bg-green-700 h-full w-full max-w-75 fixed top-0
+    @apply bg-green-700 h-full w-full font-bold text-lg max-w-75 fixed top-0
            flex flex-col items-center pt-5 text-white capitalize
            transition-all duration-300 ease-in-out -right-75;
      /* Initially hide the menu off-screen to the right */
@@ -115,7 +115,7 @@ a:hover{
 }
 .aside-menu li{
   @apply pt-5 border-b-white border-b-1 border-0 hover:border-0 
-          hover:rounded-sm
+          hover:rounded-sm text-[15px] tracking-widest 
         
 }
 .aside-menu li a{
@@ -242,8 +242,8 @@ a:hover{
   @apply text-green-700  mb-3 font-serif text-xl max-md:text-sm
 }
 .service-content i{
-  @apply bg-green-700 text-white border-green-900 border-b-5 border-t-4
-          p-5 max-md:text-sm shadow-gray-600 rounded-t-full
+  @apply bg-green-700 text-white border-green-900 border-b-3 border-t-3
+          p-3 max-md:text-sm shadow-gray-600 rounded-t-full
 }
 .Contact-us_section{
   @apply bg-gray-200 p-10 relative
