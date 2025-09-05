@@ -579,7 +579,6 @@
   .hero_section {
     position: relative;
     height: 39rem;
-    overflow: hidden;
     background-image: url('imgg/hero_3.jpg');
     background-size: cover;
     background-position: center;
@@ -646,7 +645,6 @@
       margin-inline-start: calc(calc(var(--spacing) * 20) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 20) * calc(1 - var(--tw-space-x-reverse)));
     }
-    overflow: hidden;
     border-top-style: var(--tw-border-style);
     border-top-width: 2px;
     background-color: var(--color-white);
