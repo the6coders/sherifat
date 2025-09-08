@@ -148,6 +148,32 @@ a:hover{
   @apply px-5 
 
 }
+.main_about_us{
+  @apply grid gap-10 max-md:gap-5 grid-cols-2 max-md:grid-cols-1 overflow-hidden
+         px-20 max-md:px-5 mt-15 max-md:mt-0
+
+}
+.right_main_about_us{
+  @apply  rounded-4xl overflow-clip max-md:order-2
+}
+/* .imggg{
+  @apply rounded-2xl
+} */
+.left_main_about_us{
+  @apply mt-10 max-md:mt-2 
+}
+.left_main_about_us h1{
+  @apply mb-2 max-md:text-center border-l-2 max-md:text-xl border-green-700 font-extrabold text-3xl text-green-700
+}
+.left_main_about_us :nth-child(2){
+  @apply font-bold text-xl max-md:text-lg italic text-sky-600
+}
+.left_main_about_us :nth-child(3){
+  @apply text-justify mb-3 max-md:text-sm indent-5
+}
+.left_main_about_us .btn{
+  @apply max-md:px-3 max-md:py-1 
+}
 .about_us_header{
   @apply text-center font-bold text-green-700 uppercase
          tracking-wider text-xl pb-10
