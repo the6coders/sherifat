@@ -44,10 +44,9 @@ a:hover{
   @apply grid grid-cols-1 gap-5
 }
 .hero_section{
-  @apply bg-[url('imgg/hero_3.jpg')] bg-cover bg-center 
+  @apply bg-[url('imgg/koran1.jpg')] bg-cover bg-center 
 
          h-[39rem] max-md:h-[30rem] relative        
-
 }
 .up_nav_link{
     @apply flex lg:justify-between items-center py-2 
@@ -121,6 +120,12 @@ a:hover{
 .aside-menu li a{
   @apply hover:text-green-700 
 }
+/* .submenu{
+  @apply hidden;
+} */
+.aside-menu li.hover .submenu {
+  @apply block;
+}
 
 .home{
   @apply bg-green-700 py-1 px-4 rounded-full 
@@ -149,18 +154,19 @@ a:hover{
 
 }
 .main_about_us{
-  @apply grid gap-10 max-md:gap-5 grid-cols-2 max-md:grid-cols-1 overflow-hidden
+  @apply grid gap-10 max: md gap -1px grid-cols-2 max-md:grid-cols-1 overflow-hidden
          px-20 max-md:px-5 mt-15 max-md:mt-0
 
 }
 .right_main_about_us{
-  @apply  rounded-4xl overflow-clip max-md:order-2
+  @apply  rounded-4xl max-md:rounded-xl overflow-clip max-md:order-2
 }
 /* .imggg{
   @apply rounded-2xl
 } */
 .left_main_about_us{
-  @apply mt-10 max-md:mt-2 
+  @apply shadow-green-400 shadow-md mt-5 mb-10 max-md:mt-2 
+          px-5 py-2 rounded-xl hover:bg-gray-200 hover:transition-all duration-800 ease-in-out
 }
 .left_main_about_us h1{
   @apply mb-2 max-md:text-center border-l-2 max-md:text-xl border-green-700 font-extrabold text-3xl text-green-700
@@ -172,7 +178,10 @@ a:hover{
   @apply text-justify mb-3 max-md:text-sm indent-5
 }
 .left_main_about_us .btn{
-  @apply max-md:px-3 max-md:py-1 
+  @apply max-md:px-3 max-md:py-1 px-4 hover:bg-green-800 cursor-pointer py-2
+}
+.left_main_about_us .btn a{
+  @apply hover:text-white
 }
 .about_us_header{
   @apply text-center font-bold text-green-700 uppercase
