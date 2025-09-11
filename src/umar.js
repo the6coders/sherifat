@@ -259,5 +259,20 @@ function checkUserName(newusername , newpassword , newphonennumber){
         console.log(username.length);
         console.log(username.toString())
         
+//about sub menu showing up
+let aboutt = document.getElementById("aboutt");
+let submenu = document.getElementById("submenu");
+let rotateIcon = document.querySelector(".rotate-icon");
 
+function submenuShowUp() {
+    if (submenu.style.display == 'none') {
+        submenu.style.display = 'block';
+        // Toggle the 'rotated' class on the icon
+    rotateIcon.classList.toggle('rotated');
+        
+    } else {
+        submenu.style.display = 'none';
+    }
+}
 
+aboutt.addEventListener("click", submenuShowUp);
