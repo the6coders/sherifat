@@ -44,7 +44,7 @@ a:hover{
   @apply grid grid-cols-1 gap-5
 }
 .hero_section{
-  @apply bg-[url('imgg/new.jpg')] bg-cover bg-center
+  @apply bg-[url('imgg/dark.jpg')] bg-cover bg-center
 
          h-[49rem] max-md:h-[25rem] relative        
 }
