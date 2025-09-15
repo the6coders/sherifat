@@ -608,7 +608,7 @@
   .hero_section {
     position: relative;
     height: 49rem;
-    background-image: url('imgg/dark.jpg');
+    background-image: url('imgg/new.jpg');
     background-size: cover;
     background-position: center;
     @media (width < 48rem) {
