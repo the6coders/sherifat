@@ -262,17 +262,17 @@ function checkUserName(newusername , newpassword , newphonennumber){
 //about sub menu showing up
 let aboutt = document.getElementById("aboutt");
 let submenu = document.getElementById("submenu");
-let rotateIcon = document.querySelector(".rotate-icon");
+// let rotateIcon = document.querySelector(".rotate-icon");
 
-function submenuShowUp() {
-    if (submenu.style.display == 'none') {
-        submenu.style.display = 'block';
-        // Toggle the 'rotated' class on the icon
-    rotateIcon.classList.toggle('rotated');
+function subMenuShowUp(){
+     if (submenu.style.display =='none') {
+        submenu.style.display ='block';
         
     } else {
-        submenu.style.display = 'none';
+        submenu.style.display ='none';
     }
 }
+aboutt.addEventListener("click", subMenuShowUp);
+//    
 
-aboutt.addEventListener("click", submenuShowUp);
+// aboutt.addEventListener("click", submenuShowUp);
