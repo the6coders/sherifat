@@ -141,14 +141,9 @@ a:hover{
 .hero_page_content{
   @apply  text-xl text-white max-md:mt-0 max-md:text-sm
     relative  h-[30rem] max-md:h-[20rem] 
-          max-lg:text-2xl  max-md:px-0 
+          max-lg:text-2xl
 }
-/* .hero_page_cont{
-  @apply relative h-full bg-white
-} */
- /* .container{
-  @apply max-md:h-[160%] border-0 
- } */
+
 .hero-text{
   @apply max-md:text-sm
 }
@@ -164,13 +159,13 @@ a:hover{
           transition duration-100 ease-in-out  max-lg:text-sm
 }
 
-.aboutus_section{
-  @apply px-5 
+/* .aboutus_section{
+  @apply px-5 py-40
 
-}
+} */
 .main_about_us{
   @apply grid gap-10 max-md:gap-5 grid-cols-2 max-md:grid-cols-1 overflow-hidden
-         px-20 max-md:px-5 mt-15 max-md:mt-2
+         px-20 max-md:px-5 mt-15 max-md:mt-2 py-20 max-md:py-5
 
 }
 .right_main_about_us{

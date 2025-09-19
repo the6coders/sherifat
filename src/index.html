@@ -9,10 +9,11 @@
   <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   <style>
     .swiper{
-       
+        height: 120%;
+        max-height: 125%;
         width: 100%;
-        position: absolute;
-        border: 2px solid white;
+        /* position: absolute; */
+        max-width: fit-content;   
 
     }
     /* Set the height to 30rem for screens 768px and smaller */
@@ -20,7 +21,14 @@
    @media (width <= 48rem /* 768px */) {
         .container{
            max-width: 48rem /* 768px */;
-           height: 118%;
+           height: 120%;
+           max-height: 105%;
+
+           
+        }
+        .swiper-slide{
+          gap: 3px;
+          padding: 20px ;
         }
        
     }
@@ -35,6 +43,7 @@
         font-weight: bolder;
         font-size: x-large;
         text-align: center;
+       background: center/cover no-repeat;
         /* background: url("imgg/lamp1.jpg") no-repeat center/cover;         */
         
     }
@@ -42,11 +51,16 @@
       background-image: url(imgg/justt.jpg);
     }
     .slide-2{
-      background-image: url(imgg/just.jpg);
+      background-image: url(imgg/download.png);
     }
     .slide-3{
-      background-image: url(imgg/new.jpg);
+      background-image: url(imgg/school-2.jpg);
     }
+    /* .swiper-wrapper{
+      
+      padding: 10px;
+      border: 2px solid white;
+    } */
   </style>
 </head>
 <body class="relative z-40">
@@ -138,16 +152,15 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide slide-1">
+                   <div class="swiper-slide slide-1">
                   
-                    <h1 class="max-md:text-lg">Where Arabic Mastery Meets Islamic Wisdom</h1>
-                    <p class="text-[15px] max-md:text-sm">We aim to empower students to become leaders in
-                piety and knowledge, serving as beacons of light to their communities.
+                    <h1 class="max-md:text-sm">Where Arabic Mastery Meets Islamic Wisdom</h1>
+                    <p class="text-[15px] max-md:text-[11px] max-md:mt-5">We aim to develop pious, knowledgeable leaders who will be beacons of light in their communities.
                 
                   </p>
 
-                  <button class="">
-                        <a href="#" class="hover:text-green-900 px-10 py-2" id="changeDark"">Apply Now </a>
+                  <button class="btn max-md:px-1 max-md:mt-10">
+                        <a href="#" class="hover:text-green-900 px-10 max-md:px-2 py-2" id="changeDark"">Apply Now </a>
                   </button> 
 
                   </div>

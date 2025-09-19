@@ -489,6 +489,11 @@
       margin-top: calc(var(--spacing) * 5);
     }
   }
+  .max-md\:mt-10 {
+    @media (width < 48rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
   .max-md\:flex {
     @media (width < 48rem) {
       display: flex;
@@ -503,6 +508,16 @@
   .max-md\:border-green-600 {
     @media (width < 48rem) {
       border-color: var(--color-green-600);
+    }
+  }
+  .max-md\:px-1 {
+    @media (width < 48rem) {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+  }
+  .max-md\:px-2 {
+    @media (width < 48rem) {
+      padding-inline: calc(var(--spacing) * 2);
     }
   }
   .max-md\:font-serif {
@@ -526,6 +541,11 @@
     @media (width < 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .max-md\:text-\[11px\] {
+    @media (width < 48rem) {
+      font-size: 11px;
     }
   }
   .md\:mx-auto {
@@ -852,9 +872,6 @@
       height: 20rem;
     }
     @media (width < 48rem) {
-      padding-inline: calc(var(--spacing) * 0);
-    }
-    @media (width < 48rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
@@ -912,9 +929,6 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
-  .aboutus_section {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .main_about_us {
     margin-top: calc(var(--spacing) * 15);
     display: grid;
@@ -922,6 +936,7 @@
     gap: calc(var(--spacing) * 10);
     overflow: hidden;
     padding-inline: calc(var(--spacing) * 20);
+    padding-block: calc(var(--spacing) * 20);
     @media (width < 48rem) {
       margin-top: calc(var(--spacing) * 2);
     }
@@ -933,6 +948,9 @@
     }
     @media (width < 48rem) {
       padding-inline: calc(var(--spacing) * 5);
+    }
+    @media (width < 48rem) {
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .right_main_about_us {
