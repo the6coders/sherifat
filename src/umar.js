@@ -104,17 +104,20 @@ var chance = document.getElementById('chance');
 let offScreenMenu = document.querySelector(".off-screen-menu");
 let hamburger = document.querySelector(".hamburger");
 let fa_xmark = document.querySelector(".fa-xmark");
+// let body = document.body;
  
 function toggleMenu() {
     offScreenMenu.classList.toggle('active');
 }
 
 function gone() {
+    
     offScreenMenu.classList.remove('active');
 }
 
 hamburger.addEventListener("click", toggleMenu);
 fa_xmark.addEventListener("click", gone);
+// body.addEventListener("click", gone);
 
 //menu ends here
 
@@ -123,9 +126,7 @@ fa_xmark.addEventListener("click", gone);
     var hide = document.getElementById("hide");
     var body = document.body;
     var cancle = document.getElementById("click") ;// Get a reference to the body element
-    // let x = '17';
-    // let 
-
+   
     let nameInput = document.getElementById("full-Name").value;  
     let emailInput = document.getElementById("email").value;
     let messageInput = document.getElementById("message").value;
@@ -267,6 +268,8 @@ let submenu = document.getElementById("submenu");
 function subMenuShowUp(){
      if (submenu.style.display =='none') {
         submenu.style.display ='block';
+    //     // Toggle the 'rotated' class on the icon
+    // rotateIcon.classList.toggle('rotated');
         
     } else {
         submenu.style.display ='none';
@@ -276,3 +279,4 @@ aboutt.addEventListener("click", subMenuShowUp);
 //    
 
 // aboutt.addEventListener("click", submenuShowUp);
+

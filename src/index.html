@@ -5,8 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="./output.css" rel="stylesheet">
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
- 
+  
+  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <style>
+    .swiper{
+       
+        width: 100%;
+        position: absolute;
+        border: 2px solid white;
+
+    }
+    /* Set the height to 30rem for screens 768px and smaller */
+
+   @media (width <= 48rem /* 768px */) {
+        .container{
+           max-width: 48rem /* 768px */;
+           height: 118%;
+        }
+       
+    }
+
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        font-weight: bolder;
+        font-size: x-large;
+        text-align: center;
+        /* background: url("imgg/lamp1.jpg") no-repeat center/cover;         */
+        
+    }
+    .slide-1{
+      background-image: url(imgg/justt.jpg);
+    }
+    .slide-2{
+      background-image: url(imgg/just.jpg);
+    }
+    .slide-3{
+      background-image: url(imgg/new.jpg);
+    }
+  </style>
 </head>
 <body class="relative z-40">
   <div class="sections_container">
@@ -89,18 +130,60 @@
 
       </div>
         
-      <div class="hero_page_content md:mx-auto w-full">
+     
+      <div class="hero_page_content">
+
+              <!-- Slider main container -->
+          <div class="swiper container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slide-1">
+                  
+                    <h1 class="max-md:text-lg">Where Arabic Mastery Meets Islamic Wisdom</h1>
+                    <p class="text-[15px] max-md:text-sm">We aim to empower students to become leaders in
+                piety and knowledge, serving as beacons of light to their communities.
+                
+                  </p>
+
+                  <button class="">
+                        <a href="#" class="hover:text-green-900 px-10 py-2" id="changeDark"">Apply Now </a>
+                  </button> 
+
+                  </div>
+                  <div class="swiper-slide slide-2">Slide 2</div>
+                  <div class="swiper-slide slide-3">Slide 3</div>
+                  ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+          </div>
+
+      </div>
+       
+
+
+    
       
 
         <!-- <h1 class="capitalize">umar bn khattob school for Arabic and Islamic studies</h1> -->
         <!-- <p class="capitalize italic">knowledge <span class="lowercase">is the </span> soul of sunnah</p> -->
-        <p class="max-md:text-lg font-bold">Where Arabic Mastery Meets Islamic Wisdom</p>
-        <p class="hero-text max-md:text-sm">We aim to empower students to become leaders in piety and knowledge, serving as beacons of light to their communities.
+        <!-- <p class="max-md:text-lg font-bold">Where Arabic Mastery Meets Islamic Wisdom</p>
+        <p class="hero-text max-md:text-sm">We aim to empower students to become leaders in
+           piety and knowledge, serving as beacons of light to their communities.
+          
+        </p>
 
-</p>
-          <button class="btn px-10 py-2" onclick="changeDark()">
-                <a href="#" class="hover:text-green-900">Apply Now </a>
-              </button>  
+          <button class="" >
+                <a href="#" class="hover:text-green-900 btn px-10 py-2" id="changeDark"">Apply Now </a>
+          </button>   -->
           <!-- <div id="disapear" class="btn guestname pr-0.5 py-0.5 bg-white text-black">
             
             <input type="text" name="full-Name" id="welcomeName"
@@ -113,7 +196,7 @@
           </div>             -->                  
         
          
-      </div>
+      
       <div class="opacity_dark"></div>
       
      
@@ -162,7 +245,7 @@
               </div>
               <button class="first-btn btn-1" id="same">
                 
-                    <a href="#">click to more 
+                    <a href="swipertest.html">click to more 
                       <i class="fa-solid fa-arrow-right hover:text-black text-lg"></i>
                     </a>
 
@@ -359,7 +442,6 @@
              Vel quas ex debitis beatae voluptate harum eum minima non rem iure.</p>
         </div>
         
-       
         
       </div>
 
@@ -487,7 +569,43 @@
     </div>
   </div>
   
-  <script type="text/javascript" src="umar.js"></script>
+
+  <!-- java script links -->
+  
+    <script type="text/javascript" src="umar.js"></script>
+
+    <!-- <script type="text/javascript" src="umar.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+        //swiper 
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        // loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
 
 </body>
  

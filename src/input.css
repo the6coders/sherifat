@@ -43,11 +43,11 @@ a:hover{
 .sections_container{
   @apply grid grid-cols-1 gap-5
 }
-.hero_section{
+/* .hero_section{
   @apply bg-[url('imgg/new.jpg')] bg-cover bg-center
 
          h-[49rem] max-md:h-[25rem] relative        
-}
+} */
 .up_nav_link{
     @apply flex lg:justify-between items-center py-2 
      w-full  px-15 z-30 sticky  bg-white text-green-600 
@@ -139,10 +139,16 @@ a:hover{
   hover:text-black
 }
 .hero_page_content{
-  @apply  text-xl text-white mt-30 max-md:mt-0 max-md:text-sm
-          flex flex-col justify-end items-center max-md:gap-y-3.5 h-[30rem] max-md:h-[20rem] z-10 text-center  leading-20 max-md:leading-9
-          max-lg:text-2xl  max-md:px-5 
+  @apply  text-xl text-white max-md:mt-0 max-md:text-sm
+    relative  h-[30rem] max-md:h-[20rem] 
+          max-lg:text-2xl  max-md:px-0 
 }
+/* .hero_page_cont{
+  @apply relative h-full bg-white
+} */
+ /* .container{
+  @apply max-md:h-[160%] border-0 
+ } */
 .hero-text{
   @apply max-md:text-sm
 }
@@ -375,4 +381,3 @@ a:hover{
            cursor-pointer
 }
 }
-

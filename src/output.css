@@ -400,6 +400,9 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .leading-normal {
     --tw-leading: var(--leading-normal);
     line-height: var(--leading-normal);
@@ -604,16 +607,6 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: calc(var(--spacing) * 5);
-  }
-  .hero_section {
-    position: relative;
-    height: 49rem;
-    background-image: url('imgg/new.jpg');
-    background-size: cover;
-    background-position: center;
-    @media (width < 48rem) {
-      height: 25rem;
-    }
   }
   .up_nav_link {
     position: sticky;
@@ -843,18 +836,10 @@
     }
   }
   .hero_page_content {
-    z-index: 10;
-    margin-top: calc(var(--spacing) * 30);
-    display: flex;
+    position: relative;
     height: 30rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
-    --tw-leading: calc(var(--spacing) * 20);
-    line-height: calc(var(--spacing) * 20);
     color: var(--color-white);
     @media (width < 64rem) {
       font-size: var(--text-2xl);
@@ -867,18 +852,11 @@
       height: 20rem;
     }
     @media (width < 48rem) {
-      row-gap: calc(var(--spacing) * 3.5);
-    }
-    @media (width < 48rem) {
-      padding-inline: calc(var(--spacing) * 5);
+      padding-inline: calc(var(--spacing) * 0);
     }
     @media (width < 48rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-    @media (width < 48rem) {
-      --tw-leading: calc(var(--spacing) * 9);
-      line-height: calc(var(--spacing) * 9);
     }
   }
   .hero-text {
