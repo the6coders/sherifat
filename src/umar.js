@@ -192,13 +192,13 @@ function clientName(userName){
     
 }
 
-submitName.addEventListener("click", function(){
-    let updatName = welcomeNameInput.value;
-        welcomeNameInput.value = null;
-        copyy.innerHTML = updatName + ",";
-         nameagain.innerHTML = "Hi"+ " " + copyy.innerHTML;
-    clientName(updatName);
-});
+// submitName.addEventListener("click", function(){
+//     let updatName = welcomeNameInput.value;
+//         welcomeNameInput.value = null;
+//         copyy.innerHTML = updatName + ",";
+//          nameagain.innerHTML = "Hi"+ " " + copyy.innerHTML;
+//     clientName(updatName);
+// });
 
 
 //create my arrays username, password, phonenumber
@@ -280,3 +280,44 @@ aboutt.addEventListener("click", subMenuShowUp);
 
 // aboutt.addEventListener("click", submenuShowUp);
 
+
+    document.addEventListener("DOMContentLoaded", function() {
+    // 1. Get the button element
+    // This correctly targets your button with id="scrollToTop"
+    let mybutton = document.getElementById("scrollToTop");
+
+    // 2. Define the function that shows/hides the button
+    function scrollFunction() {
+        // We look for a scroll position greater than 20 pixels
+        if (document.documentElement.scrollTop > 800) {
+            // SHOW: Remove the 'hidden' class defined in your Tailwind CSS
+            mybutton.classList.remove("hidden");
+        } else {
+            // HIDE: Add the 'hidden' class
+            mybutton.classList.add("hidden");
+        }
+    }
+    
+    // 3. Assign the scroll event handler
+    // This executes scrollFunction() every time the user scrolls
+    window.onscroll = scrollFunction;
+
+
+    // --- CLICK LOGIC ---
+    
+    // 4. Define the function that scrolls to the top
+    function topFunction() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        // We manually hide the button immediately after clicking, 
+        // as the scroll event will eventually re-hide it, but this is faster.
+        mybutton.classList.add("hidden"); 
+    }
+
+    // 5. Assign the click event handler
+    // This executes topFunction() when the button is clicked
+    mybutton.onclick = topFunction;
+
+}); // End of DOMContentLoaded

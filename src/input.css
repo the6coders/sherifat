@@ -24,7 +24,7 @@ a:hover{
 
 }
 .opacity_dark{
-  @apply absolute inset-0 bg-green-900 opacity-15;
+  @apply absolute inset-0 bg-[#B9864D] opacity-15;
 }
 .center-x-absolute{
   @apply  left-1/2 -translate-x-1/2
@@ -34,6 +34,9 @@ a:hover{
 }
 .h1_style{
   @apply mb-5  text-green-600 font-serif italic text-3xl
+}
+.my_brown{
+  @apply bg-[#B9864D]
 }
 #hide{
   @apply fixed top-0 left-0 w-full h-full z-35 hidden
@@ -50,7 +53,7 @@ a:hover{
 } */
 .up_nav_link{
     @apply flex lg:justify-between items-center py-2 
-     w-full  px-15 z-30 sticky  bg-white text-green-600 
+     w-full  px-15 z-30 sticky  bg-white text-[#B9864D]
      border-t-5 text-lg max-md:text-sm max-md:font-bold
 }
 .up_navright{
@@ -65,7 +68,7 @@ a:hover{
 .hero_nav_bar{
   @apply flex justify-between absolute z-30 w-full px-20 max-md:px-5 
          md:pr-2  text-white lg:rounded-b-2xl items-center space-x-20
-          py-0  bg-green-600 border-b-white border
+          py-0  bg-[#B9864D]
 }
 .logo_text{
   @apply text-lg  font-bold capitalize leading-relaxed
@@ -92,7 +95,7 @@ a:hover{
           
 }
 .off-screen-menu {
-    @apply bg-green-600 h-full w-full font-bold text-lg max-w-75 fixed top-0
+    @apply bg-[#B9864D] h-full w-full font-bold text-lg max-w-75 fixed top-0
            flex flex-col items-center pt-5 text-white capitalize
            transition-all duration-300 ease-in-out -right-75;
      /* Initially hide the menu off-screen to the right */
@@ -134,13 +137,13 @@ a:hover{
 } */
 
 .home{
-  @apply bg-green-600 py-1 px-4 rounded-full 
-  border-green-600 text-white hover:bg-sky-800
+  @apply bg-[#B9864D] py-1 px-4 rounded-full 
+   text-white hover:bg-[#c49764]
   hover:text-black
 }
 .hero_page_content{
   @apply  text-xl text-white max-md:mt-0 max-md:text-sm
-    relative  h-[30rem] max-md:h-[20rem] 
+    relative  h-[30rem] max-md:h-[20rem] max-sm:h-[100vh]
           max-lg:text-2xl
 }
 
@@ -151,10 +154,10 @@ a:hover{
   @apply mt-15 max-md:mt-3 py-0  w-70 mx-auto flex justify-between pl-3;
 }
 .submitname{
-  @apply  bg-green-600 text-white px-2 py-1  rounded;
+  @apply  bg-[#B9864D] text-white px-2 py-1  rounded;
 }
 .btn {
-  @apply  bg-green-600  text-lg text-white
+  @apply  bg-[#B9864D]  text-lg text-white
           hover:bg-white  hover:text-green-900 rounded-lg  
           transition duration-100 ease-in-out  max-lg:text-sm
 }
@@ -177,7 +180,7 @@ a:hover{
 } */
 .left_main_about_us{
   @apply shadow-green-400 shadow-md 
-          px-5 py-2 rounded-xl hover:bg-gray-200 hover:transition-all duration-800 ease-in-out
+          px-5 py-2 rounded-xl hover:bg-[#B9864D] hover:transition-all duration-800 ease-in-out
 }
 .left_main_about_us h1{
   @apply mb-2 max-md:text-center border-l-2 max-md:text-xl border-green-600 font-extrabold text-3xl text-green-600
@@ -189,7 +192,7 @@ a:hover{
   @apply text-justify mb-3 max-md:text-sm indent-5
 }
 .left_main_about_us .btn{
-  @apply max-md:px-3 max-md:py-1 px-4 hover:bg-green-800 cursor-pointer py-2
+  @apply max-md:px-3 max-md:py-1 px-4 hover:bg-[#B9864D] cursor-pointer py-2
 }
 .left_main_about_us .btn a{
   @apply hover:text-white
@@ -231,7 +234,7 @@ a:hover{
   @apply text-center max-lg:mb-5
 } 
 .btn-1 a {
-  @apply bg-green-600 py-2 px-3 text-xl text-white
+  @apply bg-[#B9864D] py-2 px-3 text-xl text-white
          hover:border-green-600 hover:bg-white hover:border-2
          hover:text-green-600 rounded-xl  transition duration-300 ease-in-out
          max-lg:text-sm 
@@ -248,7 +251,7 @@ a:hover{
 }
 .left_side_down, .left_side_up ,
 .right_side_up , .right_side_down{
-  @apply  bg-gray-200 rounded-r-xl rounded-bl-xl p-5 hover:bg-gray-300
+  @apply  bg-[#B9864D] rounded-r-xl rounded-bl-xl p-5 hover:bg-[#B9864D]
 }
 .center_side{
   @apply grid lg:grid-cols-2 gap-3 bg-white 
@@ -282,17 +285,17 @@ a:hover{
          text-center 
 }
 .service-content{
-  @apply shadow-green-400 shadow-md py-3 hover:scale-x-104 hover:scale-y-104 hover:bg-gray-200 hover:transition-all duration-800 ease-in-out
+  @apply shadow-green-400 shadow-md py-3 hover:scale-x-104 hover:scale-y-104 hover:bg-[#B9864D] hover:transition-all duration-800 ease-in-out
 }
 .service-content i,.service-content h1{
   @apply text-green-600  mb-3 font-serif text-xl max-md:text-sm
 }
 .service-content i{
-  @apply bg-green-600 text-white border-green-900 border-b-3 border-t-3
+  @apply bg-[#B9864D] text-white border-green-900 border-b-3 border-t-3
           p-3 max-md:text-sm shadow-gray-600 rounded-t-full
 }
 .Contact-us_section{
-  @apply bg-gray-200 p-10 relative
+  @apply bg-[#B9864D] p-10 relative
 }
 .contact_container{
   @apply grid grid-cols-2 grid-rows-3 gap-5 h-5/6 w-3/5 max-lg:w-full max-lg:px-15  overflow-hidden
@@ -319,12 +322,12 @@ a:hover{
   @apply border-b-2 border-black w-full focus:outline-none focus:border-green-600 pb-1
 }
 .submit{
-  @apply  mt-5  py-2  bg-green-600 text-white  text-center w-full
+  @apply  mt-5  py-2  bg-[#B9864D] text-white  text-center w-full
           text-xl hover:border-green-600 hover:bg-white hover:border-2
          hover:text-green-600 rounded-xl  transition duration-300 ease-in-out
 }
 .footer_section{
-  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-green-900 text-white 
+  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-[#e3b786] text-black 
 }
 .up_footer{
   @apply grid lg:grid-cols-4 lg:justify-items-center lg:py-5
@@ -338,7 +341,7 @@ a:hover{
   w-full leading-9 
 }
 .right_border{
-  @apply border-l-2 border-white px-3 text-sky-300 capitalize font-extrabold tracking-wider
+  @apply border-l-2 border-white px-3 text-2xl max-sm:text-sm text-white capitalize font-extrabold tracking-wider
 }
 .cont4{
   @apply flex flex-col
@@ -352,7 +355,7 @@ a:hover{
 }
 
 .pop-up{
-  @apply bg-white rounded-2xl border-2 border-green-600 text-lg top-40  z-50
+  @apply bg-white rounded-2xl border-2 border-[#e3b786] text-lg top-40  z-50
        max-md:w-5/6 max-md:text-sm max-lg:w-4/6 lg:w-5/6 hidden max-lg:top-20
        overflow-hidden text-center p-5 leading-9 max-md:p-2 max-md:mx-auto absolute
        
@@ -367,12 +370,22 @@ a:hover{
 }
 
 .cancle_btn{
-  @apply  absolute z-50 bottom-5 right-5 px-2 bg-green-600 text-white
-           hover:bg-green-400 rounded transition duration-100 ease-in-out 
+  @apply  absolute z-50 bottom-5 right-5 px-2 bg-[#B9864D] text-white
+           hover:bg-[#B9864D] rounded transition duration-100 ease-in-out 
 }
 .changebg{
-  @apply absolute z-50 bottom-5 left-15 px-2 bg-green-600 text-white
-           hover:bg-green-400 rounded transition duration-100 ease-in-out 
+  @apply absolute z-50 bottom-5 left-15 px-2 bg-[#B9864D] text-white
+           hover:bg-[#B9864D] rounded transition duration-100 ease-in-out 
            cursor-pointer
 }
+.scrollToTop{
+  @apply fixed bottom-5 right-5 z-50
+    p-4 text-white text-xl font-bold rounded-full
+    bg-gray-700 shadow-lg transition-colors duration-300
+    hover:bg-gray-900 focus:outline-none focus:ring-2  focus:ring-gray-500/50
+    w-12 h-12 flex items-center justify-center
+}
+/* .scrollToTopB.active{
+  @apply hidden;
+} */
 }

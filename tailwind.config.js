@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // 👇 ADD THE COLORS OBJECT HERE
+      colors: {
+        'tawny-brown': '#B9864D', 
+      },
+      // 👆
       keyframes: {
         'square-in-center': {
           'from': { 'clip-path': 'inset(100% 100% 100% 100%)' },
