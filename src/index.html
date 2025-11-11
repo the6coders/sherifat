@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="./output.css" rel="stylesheet">
+  <!-- css animation -->
+  <!-- <link rel="stylesheet" href="animations.css"> -->
   
   <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   <style>
@@ -15,6 +17,20 @@
         /* position: absolute; */
         max-width: fit-content;   
 
+    }
+    /* Style the Swiper Navigation Buttons (Prev/Next) */
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: white !important; /* Make sure they are visible over the slides */
+      background: #b9864d; /* Add a dark background for contrast */
+      padding: 15px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      background: rgba(0, 0, 0, 0.6);
     }
     /* Set the height to 30rem for screens 768px and smaller */
 
@@ -219,11 +235,11 @@
 
       <div class="main_about_us">
                
-        <div class="right_main_about_us">
+        <div class="right_main_about_us animate-on-scroll delay-1">
           <img src="imgg/new.jpg" class="rounded-xl">
 
         </div>
-        <div class="left_main_about_us">
+        <div class="left_main_about_us animate-on-scroll delay-2">
           <h1>About Us</h1>    
           <p class="mb-2">welcome to umar bn khattob</p>
           <p>Our school was established with a singular vision: to be a sanctuary for traditional
@@ -320,7 +336,7 @@
     </div>
     
     <div class="why_choose" id="why_choose">
-      <div class="left_side content max-lg:order-2">
+      <div class="left_side content max-lg:order-2 animate-on-scroll delay-1">
         <div class="left_side_up">
           <h1>requirment</h1>
           <ul>
@@ -335,7 +351,7 @@
             <li>sljfsf</li>
           </ul>
         </div>
-        <div class="left_side_down">
+        <div class="left_side_down animate-on-scroll delay-1">
           <h1>ARRANGEKLFGJ</h1>
            <ul>
             <li>nahw</li>
@@ -350,7 +366,7 @@
           </ul>
         </div>    
       </div>
-      <div class="center_side">
+      <div class="center_side animate-on-scroll delay-1">
         
           <div class="center_header1"></div>
           <div class="center_header2"></div>
@@ -418,37 +434,37 @@
       </div>
       <div class="our-service-content">
 
-        <div class="service-content content1">
+        <div class="service-content content1 animate-on-scroll delay-1">
           <i class="fa-solid fa-star-and-crescent"></i>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
              Vel quas ex debitis beatae voluptate harum eum minima non rem iure.</p>
         </div>
-        <div class="service-content content2">
+        <div class="service-content content2 animate-on-scroll delay-2">
           <i class="fa-solid fa-star-and-crescent"></i>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
              Vel quas ex debitis beatae voluptate harum eum minima non rem iure.</p>
         </div>
-        <div class="service-content content3">
+        <div class="service-content content3 animate-on-scroll delay-3">
           <i class="fa-solid fa-star-and-crescent"></i>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
              Vel quas ex debitis beatae voluptate harum eum minima non rem iure.</p>
         </div>
-        <div class="service-content content4">
+        <div class="service-content content4 animate-on-scroll delay-1">
           <i class="fa-solid fa-star-and-crescent"></i>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
              Vel quas ex debitis beatae voluptate harum eum minima non rem iure.</p>
         </div>
-        <div class="service-content content5">
+        <div class="service-content content5 animate-on-scroll delay-2">
           <i class="fa-solid fa-star-and-crescent"></i>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
              Vel quas ex debitis beatae voluptate harum eum minima non rem iure.</p>
         </div>
-        <div class="service-content content6">
+        <div class="service-content content6 animate-on-scroll delay-3">
           <i class="fa-solid fa-star-and-crescent"></i>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -474,7 +490,7 @@
       <!-- <div class="opacity_dark opacity-85"></div>  -->
       <div class="contact_container  center-x-absolute text-black ">
 
-        <div class="contact_header px-10 ">
+        <div class="contact_header px-10 animate-on-scroll delay-1">
           <h1 class="mb-6 md:text-3xl  max-md:text-xl  font-extrabold tracking-wider">contact us</h1>
           <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore et
              doloribus eveniet recusandae sequi fugit, cupiditate sit repellendus voluptates 
@@ -483,7 +499,7 @@
         </div>
         <div class="contact_body">
           
-          <div class="adress flex items-center  space-x-5">
+          <div class="adress flex items-center  space-x-5 animate-on-scroll delay-2">
             <i class="fa-regular fa-address-book footer_icons"></i>
             
             <p><span class="blue_color">Address</span><br> oboroke ihima, <br> kogi-state ,<br>number 10.</p>
@@ -499,7 +515,7 @@
             <p> <span class="blue_color">Email</span><br> rufisdata@gmail.com</p>
           </div>
         </div>
-        <div class="contact_body contact_body_right">
+        <div class="contact_body contact_body_right animate-on-scroll delay-3">
           <h1 class="text-2xl font-bold tracking-wider">Send Message</h1>
           <form action="">
             <div class="full-Name mb-6">
@@ -536,12 +552,12 @@
     <!-- div.up_footer>.cont.cont${cont$}*4 -->
     <div class="up_footer">
       <div class="cont cont1">
-        <h1 class="font-extrabold text-sky-300 text-2xl capitalize">umar bn khattob</h1>
+        <h1 class="font-extrabold text-[#C7A246] text-2xl capitalize">umar bn khattob</h1>
         <p class="leading-normal mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             odit animi repellendus est explicabo unde!
         </p>
       </div>
-      <div class="cont cont2">
+      <div class="cont cont2 animate-on-scroll delay-1">
         <p class="right_border">link</p>
         <ul>
           <li><a href="#">home</a></li>
@@ -550,7 +566,7 @@
           <li><a href="#">why_us</a></li>
         </ul>
       </div>
-      <div class="cont cont3">
+      <div class="cont cont3 animate-on-scroll delay-2">
          <p class="right_border">others</p>
         <ul>
           <li><a href="#">terms of service</a></li>
@@ -559,7 +575,7 @@
           <li><a href="#">gallary</a></li>
         </ul>
       </div>
-      <div class="cont cont4">
+      <div class="cont cont4 animate-on-scroll delay-3">
         <div>
           <p class="right_border">others</p>
         </div> <div class="max-md:flex">
@@ -576,7 +592,7 @@
         
       </div>
     </div>
-    <div class="down_footer">
+    <div class="down_footer animate-on-scroll delay-2">
       <div class="down down1">&copy; 2026, Umar Bn khattob.</div>
       <div class="down down2">All rights reserved.</div>
     </div>
@@ -584,7 +600,7 @@
 
   <!-- scroll to top button -->
    
-    <button id="scrollToTop" title="Go to top"  class="scrollToTop hidden"> &#9650; 
+    <button id="scrollToTop" title="Go to top"  class="animate-on-scroll delay-2 scrollToTop hidden"> &#9650; 
 
     </button>
    

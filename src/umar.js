@@ -119,6 +119,7 @@ hamburger.addEventListener("click", toggleMenu);
 fa_xmark.addEventListener("click", gone);
 // body.addEventListener("click", gone);
 
+
 //menu ends here
 
 
@@ -276,48 +277,61 @@ function subMenuShowUp(){
     }
 }
 aboutt.addEventListener("click", subMenuShowUp);
-//    
 
-// aboutt.addEventListener("click", submenuShowUp);
+// scrolling effect
 
 
-    document.addEventListener("DOMContentLoaded", function() {
-    // 1. Get the button element
-    // This correctly targets your button with id="scrollToTop"
+ document.addEventListener("DOMContentLoaded", function() {
     let mybutton = document.getElementById("scrollToTop");
-
-    // 2. Define the function that shows/hides the button
-    function scrollFunction() {
-        // We look for a scroll position greater than 20 pixels
-        if (document.documentElement.scrollTop > 800) {
-            // SHOW: Remove the 'hidden' class defined in your Tailwind CSS
+    
+    function scrollFunction(){
+        if(document.documentElement.scrollTop > 600){
             mybutton.classList.remove("hidden");
-        } else {
-            // HIDE: Add the 'hidden' class
+        }
+        else{
             mybutton.classList.add("hidden");
         }
     }
-    
-    // 3. Assign the scroll event handler
-    // This executes scrollFunction() every time the user scrolls
-    window.onscroll = scrollFunction;
+    window.addEventListener("scroll", scrollFunction)
 
-
-    // --- CLICK LOGIC ---
-    
-    // 4. Define the function that scrolls to the top
-    function topFunction() {
+    function topFunction(){
         window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-        // We manually hide the button immediately after clicking, 
-        // as the scroll event will eventually re-hide it, but this is faster.
-        mybutton.classList.add("hidden"); 
-    }
+        top: 0,
+        behavior: "smooth"
+    
+    });
+    };
+    mybutton.addEventListener("click", topFunction);
+    
+ });
+  
+ //end of scrolling effect
+   
+//code copied from gemini
 
-    // 5. Assign the click event handler
-    // This executes topFunction() when the button is clicked
-    mybutton.onclick = topFunction;
+/* --- Scroll Animation Logic using Intersection Observer --- */
 
-}); // End of DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function() {
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+  const observerOptions = {
+    root: null, 
+    rootMargin: '0px',
+    threshold: 0.1 // Triggers when 10% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add the class, which starts the CSS animation
+        entry.target.classList.add('is-visible'); 
+        // Stop observing this element
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, observerOptions);
+
+  animatedElements.forEach(element => {
+    observer.observe(element);
+  });
+});
