@@ -1394,6 +1394,7 @@
     position: relative;
     background-color: #B9864D;
     padding: calc(var(--spacing) * 10);
+    color: var(--color-white);
   }
   .contact_container {
     position: absolute;
@@ -1419,17 +1420,19 @@
   .contact_header {
     grid-column: span 2 / span 2;
     text-align: center;
+    color: var(--color-white);
   }
   .contact_body {
     grid-row: span 2 / span 2;
     display: grid;
+    color: var(--color-white);
   }
   .blue_color {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
-    color: var(--color-green-600);
+    color: var(--color-white);
   }
   .footer_icons {
     margin-right: calc(var(--spacing) * 5);
@@ -1504,7 +1507,7 @@
     }
   }
   .footer_section {
-    background-color: #0A0A0A;
+    background-color: var(--color-white);
     padding-inline: calc(var(--spacing) * 20);
     padding-block: calc(var(--spacing) * 5);
     color: #C7A246;
@@ -1513,6 +1516,10 @@
     }
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 5);
+    }
+    @media (width >= 48rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .up_footer {

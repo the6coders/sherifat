@@ -330,7 +330,7 @@ a:hover{
           p-3 max-md:text-sm shadow-gray-600 rounded-t-full
 }
 .Contact-us_section{
-  @apply bg-[#B9864D] p-10 relative
+  @apply bg-[#B9864D] p-10 relative text-white
 }
 .contact_container{
   @apply grid grid-cols-2 grid-rows-3 gap-5 h-5/6 w-3/5 max-lg:w-full max-lg:px-15  overflow-hidden
@@ -338,13 +338,13 @@ a:hover{
    
 }
 .contact_header{
-  @apply col-span-2 text-center 
+  @apply col-span-2 text-center text-white
 }
 .contact_body{
-  @apply grid row-span-2 
+  @apply grid row-span-2 text-white
 }
 .blue_color{
-  @apply text-green-600 font-extrabold tracking-wider
+  @apply text-white text-2xl tracking-wider
 }
 .footer_icons{
   @apply bg-white text-green-600 p-3 mr-5  rounded-full font-extrabold 
@@ -362,7 +362,7 @@ a:hover{
          hover:text-[#C7A246] rounded-xl  transition duration-300 ease-in-out
 }
 .footer_section{
-  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-[#0A0A0A] text-[#C7A246]
+  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-white text-[#C7A246] md:text-xl
 }
 .up_footer{
   @apply grid lg:grid-cols-4 lg:justify-items-center lg:py-5
