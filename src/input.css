@@ -126,7 +126,7 @@ a:hover{
   @apply md:hidden 
 }
 .hamburger i{
-  @apply text-white text-2xl cursor-pointer absolute top-5 right-10    
+  @apply text-[#B9864D] text-2xl cursor-pointer absolute top-5 right-10    
           
 }
 .off-screen-menu {
@@ -367,13 +367,16 @@ a:hover{
 .up_footer{
   @apply grid lg:grid-cols-4 lg:justify-items-center lg:py-5
   
-  md:grid-cols-2 md:justify-items-center max-sm:grid-cols-2
+  md:grid-cols-2 md:justify-items-center
   
-   max-sm:justify-items-start max-md:gap-6
+  max-sm:grid-cols-1 max-sm:justify-items-start max-md:gap-6
 
   max-md:text-sm
 
   w-full leading-9 
+}
+.foot-center{
+  @apply max-sm:grid-cols-2
 }
 .right_border{
   @apply border-l-2 border-[#C7A246] px-3 text-2xl max-sm:text-sm text-[#C7A246] capitalize font-extrabold tracking-wider

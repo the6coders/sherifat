@@ -272,9 +272,6 @@
       max-width: 96rem;
     }
   }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -308,17 +305,14 @@
   .hidden {
     display: none;
   }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
+  .table {
+    display: table;
   }
   .h-\[39rem\] {
     height: 39rem;
   }
   .h-full {
     height: 100%;
-  }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
   }
   .w-full {
     width: 100%;
@@ -331,6 +325,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -383,6 +380,9 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -391,6 +391,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .pr-0 {
+    padding-right: calc(var(--spacing) * 0);
   }
   .pr-0\.5 {
     padding-right: calc(var(--spacing) * 0.5);
@@ -442,6 +445,9 @@
   }
   .italic {
     font-style: italic;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-85 {
     opacity: 85%;
@@ -561,6 +567,11 @@
   .max-md\:text-\[11px\] {
     @media (width < 48rem) {
       font-size: 11px;
+    }
+  }
+  .max-sm\:bg-white {
+    @media (width < 40rem) {
+      background-color: var(--color-white);
     }
   }
   .md\:mx-auto {
@@ -807,7 +818,7 @@
     cursor: pointer;
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-    color: var(--color-white);
+    color: #B9864D;
   }
   .off-screen-menu {
     position: fixed;
@@ -1535,7 +1546,7 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
     @media (width < 40rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     @media (width < 40rem) {
       justify-items: start;
@@ -1554,6 +1565,11 @@
     }
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .foot-center {
+    @media (width < 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .right_border {
