@@ -367,9 +367,9 @@ a:hover{
 .up_footer{
   @apply grid lg:grid-cols-4 lg:justify-items-center lg:py-5
   
-  md:grid-cols-2 md:justify-items-center 
+  md:grid-cols-2 md:justify-items-center max-sm:grid-cols-2
   
-  max-sm:grid-cols-1 max-sm:justify-items-start max-md:gap-6
+   max-sm:justify-items-start max-md:gap-6
 
   max-md:text-sm
 

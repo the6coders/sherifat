@@ -1535,7 +1535,7 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
     @media (width < 40rem) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     @media (width < 40rem) {
       justify-items: start;
