@@ -20,7 +20,7 @@ var chance = document.getElementById('chance');
 
         // Define the classes you want to add for the active link
         // This makes it easier to manage and avoid typos
-        const activeClasses = ['text-white', 'bg-green-700', 'py-1', 'px-4', 'rounded-full' ,
+        const activeClasses = ['text-white', 'bg-[#B9864D]', 'py-1', 'px-4', 'rounded-full' ,
                                'transition' , 'duration-700' , 'ease-out'];
 
         window.addEventListener('scroll', () => {

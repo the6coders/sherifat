@@ -51,11 +51,11 @@
 }
 
 .border_style{
-  @apply border-t-2 border-b-2 border-green-300 rounded-r-3xl rounded-l-4xl rounded-br-3xl
+  @apply border-t-2 border-b-2 border-[#B9864D] rounded-r-3xl rounded-l-4xl rounded-br-3xl
 
 }
 a:hover{
-  @apply text-sky-300
+  @apply  bg-[#B9864D]
 
 }
 .opacity_dark{
@@ -68,7 +68,7 @@ a:hover{
   @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
 }
 .h1_style{
-  @apply mb-5  text-green-600 font-serif italic text-3xl
+  @apply mb-5  text-[#B9864D] font-serif italic text-3xl
 }
 .my_brown{
   @apply bg-[#B9864D]
@@ -87,7 +87,7 @@ a:hover{
          h-[49rem] max-md:h-[25rem] relative        
 } */
 .up_nav_link{
-    @apply flex lg:justify-between items-center py-2 
+    @apply flex lg:justify-between items-center py-2  
      w-full  px-15 z-30 sticky  bg-white text-[#B9864D]
      border-t-5 text-lg max-md:text-sm max-md:font-bold
 }
@@ -193,7 +193,7 @@ a:hover{
 }
 .btn {
   @apply  bg-[#B9864D]  text-lg text-white
-          hover:bg-white  hover:text-green-900 rounded-lg  
+          hover:bg-white  hover:text-[#B9864D] rounded-lg  
           transition duration-100 ease-in-out  max-lg:text-sm
 }
 
@@ -214,11 +214,11 @@ a:hover{
   @apply rounded-2xl
 } */
 .left_main_about_us{
-  @apply shadow-green-400 shadow-md 
-          px-5 py-2 rounded-xl hover:bg-[#B9864D] hover:transition-all duration-800 ease-in-out
+  @apply shadow-[#f7ecdf] shadow-2xl bg-[#f7ecdf]
+          px-5 py-2 rounded-xl hover:bg-[#f7ecdf] hover:transition-all duration-800 ease-in-out
 }
 .left_main_about_us h1{
-  @apply mb-2 max-md:text-center border-l-2 max-md:text-xl border-green-600 font-extrabold text-3xl text-green-600
+  @apply mb-2 max-md:text-center border-l-2 max-md:text-xl border-[#B9864D] font-extrabold text-3xl text-[#B9864D]
 }
 .left_main_about_us :nth-child(even){
   @apply font-bold text-xl max-md:text-lg italic text-sky-600
@@ -233,19 +233,19 @@ a:hover{
   @apply hover:text-white
 }
 .about_us_header{
-  @apply text-center font-bold text-green-600 uppercase
+  @apply text-center font-bold text-[#B9864D] uppercase
          tracking-wider text-xl pb-10
          max-md:text-sm
 }
 .about_us{
   @apply grid grid-cols-3 gap-5 px-10 max-md:px-2 overflow-hidden 
          max-md:grid-cols-1 max-lg:grid-cols-2 max-md:text-sm
-          max-lg:px-3 
+          max-lg:px-3 bg-[#f7ecdf] py-10 max-sm:py-5
          
 } 
 .first{
   @apply lg:flex lg:flex-col  gap-10  pb-5 border-b-2           
-        overflow-hidden hover:border-b-yellow-500 
+        overflow-hidden hover:border-b-[#B9864D]
              
 }
 .img{
@@ -270,8 +270,8 @@ a:hover{
 } 
 .btn-1 a {
   @apply bg-[#B9864D] py-2 px-3 text-xl text-white
-         hover:border-green-600 hover:bg-white hover:border-2
-         hover:text-green-600 rounded-xl  transition duration-300 ease-in-out
+         hover:border-[#B9864D] hover:bg-white hover:border-2
+         hover:text-[#B9864D] rounded-xl  transition duration-300 ease-in-out
          max-lg:text-sm 
 }
 .btn-1{
@@ -320,17 +320,19 @@ a:hover{
          text-center 
 }
 .service-content{
-  @apply shadow-green-400 shadow-md py-3 hover:scale-x-104 hover:scale-y-104 hover:bg-[#B9864D] hover:transition-all duration-800 ease-in-out
+  @apply shadow-[#f7ecdf] shadow-2xl py-5 hover:scale-x-104 hover:scale-y-104
+  
+   bg-[#f7ecdf] rounded-2xl hover:transition-all duration-800 ease-in-out
 }
 .service-content i,.service-content h1{
   @apply text-[#C7A246]  mb-3 font-serif text-xl max-md:text-sm
 }
 .service-content i{
-  @apply bg-[#B9864D] text-white border-green-900 border-b-3 border-t-3
-          p-3 max-md:text-sm shadow-gray-600 rounded-t-full
+  @apply bg-[#B9864D] text-white border-[#B9864D] border-b-3 border-t-3
+          p-3 max-md:text-sm shadow-[#f7ecdf] rounded-t-full
 }
 .Contact-us_section{
-  @apply bg-[#B9864D] p-10 relative text-white
+  @apply bg-[#f7ecdf] p-10 relative text-black
 }
 .contact_container{
   @apply grid grid-cols-2 grid-rows-3 gap-5 h-5/6 w-3/5 max-lg:w-full max-lg:px-15  overflow-hidden
@@ -338,38 +340,38 @@ a:hover{
    
 }
 .contact_header{
-  @apply col-span-2 text-center text-white
+  @apply col-span-2 text-center
 }
 .contact_body{
-  @apply grid row-span-2 text-white
+  @apply grid row-span-2
 }
 .blue_color{
-  @apply text-white text-2xl tracking-wider
+  @apply text-[#B9864D] text-xl tracking-wider font-extrabold
 }
 .footer_icons{
-  @apply bg-white text-green-600 p-3 mr-5  rounded-full font-extrabold 
+  @apply bg-white text-[#B9864D] md:text-xl  p-3 mr-5  rounded-full font-extrabold 
 }
 .contact_body_right{
   @apply bg-white p-5 text-black rounded-2xl text-center
           max-md:hidden
 }
 .bottom_border_style{
-  @apply border-b-2 border-black w-full focus:outline-none focus:border-green-600 pb-1
+  @apply border-b-2 border-black w-full focus:outline-none focus:border-[#B9864D] pb-1
 }
 .submit{
   @apply  mt-5  py-2  bg-[#B9864D] text-white  text-center w-full
-          text-xl hover:border-green-600 hover:bg-white hover:border-2
+          text-xl hover:border-[#B9864D] hover:bg-white hover:border-2
          hover:text-[#C7A246] rounded-xl  transition duration-300 ease-in-out
 }
 .footer_section{
-  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-white text-[#C7A246] md:text-xl
+  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-white text-[#C7A246] font-medium
 }
 .up_footer{
   @apply grid lg:grid-cols-4 lg:justify-items-center lg:py-5
   
   md:grid-cols-2 md:justify-items-center
   
-  max-sm:grid-cols-1 max-sm:justify-items-start max-md:gap-6
+  max-sm:grid-cols-1 max-sm:justify-items-start  max-md:gap-6
 
   max-md:text-sm
 
@@ -379,7 +381,7 @@ a:hover{
   @apply max-sm:grid-cols-2
 }
 .right_border{
-  @apply border-l-2 border-[#C7A246] px-3 text-2xl max-sm:text-sm text-[#C7A246] capitalize font-extrabold tracking-wider
+  @apply border-l-2 border-[#C7A246] px-3 text-xl max-sm:text-sm text-[#C7A246] capitalize font-extrabold tracking-wider
 }
 .cont4{
   @apply flex flex-col
@@ -405,7 +407,7 @@ a:hover{
   @apply bg-black text-white;
 }
 .succeffulMessege{
-  @apply  bg-white rounded-2xl border-2 border-green-600 text-lg fixed top-40 right-30 z-50
+  @apply  bg-white rounded-2xl border-2 border-[#B9864D] text-lg fixed top-40 right-30 z-50
        max-md:w-3/6 max-md:text-sm max-lg:w-4/6 lg:w-5/6 mx-auto max-lg:top-20
        overflow-hidden text-center p-5 leading-9 max-md:p-2
 }
@@ -421,9 +423,9 @@ a:hover{
 }
 .scrollToTop{
   @apply fixed bottom-5 right-5 z-50
-    p-4 text-white text-xl font-bold rounded-full
-    bg-gray-700 shadow-lg transition-colors duration-300
-    hover:bg-gray-900 focus:outline-none focus:ring-2  focus:ring-gray-500/50
+    p-4 text-white hover:text-[#B9864D] text-xl font-bold rounded-full
+    bg-[#B9864D] shadow-xl shadow-[#B9864D] transition-colors duration-300
+    hover:bg-[#f7ecdf] focus:outline-none focus:ring-2  focus:ring-gray-500/50
     w-12 h-12 flex items-center justify-center
 }
 /* .scrollToTopB.active{
