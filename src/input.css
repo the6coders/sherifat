@@ -214,8 +214,9 @@ a:hover{
   @apply rounded-2xl
 } */
 .left_main_about_us{
-  @apply shadow-[#f7ecdf] shadow-2xl bg-[#f7ecdf]
-          px-5 py-2 rounded-xl hover:bg-[#f7ecdf] hover:transition-all duration-800 ease-in-out
+  @apply shadow-[#f7ecdf] shadow-2xl bg-[#f7ecdf] font-[5rem]
+          px-5 py-2 rounded-xl hover:bg-[#f7ecdf] hover:transition-all
+           duration-800 ease-in-out
 }
 .left_main_about_us h1{
   @apply mb-2 max-md:text-center border-l-2 max-md:text-xl border-[#B9864D] font-extrabold text-3xl text-[#B9864D]
