@@ -103,7 +103,7 @@ a:hover{
 .hero_nav_bar{
   @apply flex justify-between absolute z-30 w-full px-20 max-md:px-5 
          md:pr-2  text-white lg:rounded-b-2xl items-center space-x-20
-          py-0  bg-[#B9864D]
+          py-0  bg-[#263238]
 }
 .logo_text{
   @apply text-lg  font-bold capitalize leading-relaxed
@@ -130,9 +130,9 @@ a:hover{
           
 }
 .off-screen-menu {
-    @apply bg-[#B9864D] h-full w-full font-bold text-lg max-w-75 fixed top-0
+    @apply bg-[#B9864D] h-full w-full font-bold text-lg max-w-100 fixed top-0
            flex flex-col items-center pt-5 text-white capitalize
-           transition-all duration-300 ease-in-out -right-75;
+           transition-all duration-700 ease-in-out -right-100;
      /* Initially hide the menu off-screen to the right */
 }
 
@@ -159,7 +159,7 @@ a:hover{
   @apply hover:text-green-600;
 } */
 .submenu li a{
-  @apply text-sm
+  @apply text-sm 
 }
 .submenu  li{
   @apply border-0
@@ -215,8 +215,8 @@ a:hover{
 } */
 .left_main_about_us{
   @apply shadow-[#f7ecdf] shadow-2xl bg-[#f7ecdf] font-[5rem]
-          px-5 py-2 rounded-xl hover:bg-[#f7ecdf] hover:transition-all
-           duration-800 ease-in-out
+          px-5 py-2 rounded-xl hover:bg-[#263238] hover:transition-all
+           duration-800 ease-in-out hover:text-white
 }
 .left_main_about_us h1{
   @apply mb-2 max-md:text-center border-l-2 max-md:text-xl border-[#B9864D] font-extrabold text-3xl text-[#B9864D]
@@ -321,9 +321,12 @@ a:hover{
          text-center 
 }
 .service-content{
-  @apply shadow-[#f7ecdf] shadow-2xl py-5 hover:scale-x-104 hover:scale-y-104
+  @apply shadow-[#f7ecdf] shadow-2xl py-5 max-sm:px-3 hover:scale-x-104 hover:scale-y-104
   
-   bg-[#f7ecdf] rounded-2xl hover:transition-all duration-800 ease-in-out
+   bg-[#f7ecdf] rounded-2xl hover:bg-[#263238] hover:transition-all hover:text-white duration-800 ease-in-out
+}
+.service-content:nth-child(odd){
+  @apply bg-[#263238] text-white
 }
 .service-content i,.service-content h1{
   @apply text-[#C7A246]  mb-3 font-serif text-xl max-md:text-sm
@@ -365,7 +368,7 @@ a:hover{
          hover:text-[#C7A246] rounded-xl  transition duration-300 ease-in-out
 }
 .footer_section{
-  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-white text-[#C7A246] font-medium
+  @apply px-20 max-md:px-5 sm:px-5 py-5 bg-[#263238] text-white font-medium
 }
 .up_footer{
   @apply grid lg:grid-cols-4 lg:justify-items-center lg:py-5

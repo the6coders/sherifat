@@ -107,13 +107,22 @@ let fa_xmark = document.querySelector(".fa-xmark");
 // let body = document.body;
  
 function toggleMenu() {
-    offScreenMenu.classList.toggle('active');
-}
+    if(offScreenMenu.classList.toggle('active')){
+        // Disable scrolling and interaction on the body
+    body.style.overflow = "hidden"; // Prevents scrolling
+    }
+    else{
+       body.style.overflow = "auto";
+    }
+   
+};
 
 function gone() {
     
     offScreenMenu.classList.remove('active');
+    body.style.overflow ="auto";
 }
+
 
 hamburger.addEventListener("click", toggleMenu);
 fa_xmark.addEventListener("click", gone);
@@ -181,6 +190,8 @@ let nameagain = document.getElementById("nameagain")
 let welcomeNameInput = document.getElementById('welcomeName');
 let copyy = document.getElementById("copyy"); 
 let disapear = document.getElementById("disapear")
+let school_name = document.getElementById("school-name");
+nameagain.innerHTML = school_name.textContent;
 
 function clientName(userName){
     if(!userName){
@@ -264,16 +275,17 @@ function checkUserName(newusername , newpassword , newphonennumber){
 //about sub menu showing up
 let aboutt = document.getElementById("aboutt");
 let submenu = document.getElementById("submenu");
+let rotate = document.getElementById("rotate");
 // let rotateIcon = document.querySelector(".rotate-icon");
 
 function subMenuShowUp(){
      if (submenu.style.display =='none') {
         submenu.style.display ='block';
-    //     // Toggle the 'rotated' class on the icon
-    // rotateIcon.classList.toggle('rotated');
+        rotate.classList.add("rotate-90")
         
     } else {
         submenu.style.display ='none';
+        rotate.classList.remove("rotate-90");
     }
 }
 aboutt.addEventListener("click", subMenuShowUp);
