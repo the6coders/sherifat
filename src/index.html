@@ -65,9 +65,19 @@
     }
     .slide-1{
       background-image: url(imgg/justt.jpg);
+
+      
+
     }
     .slide-2{
       background-image: url(imgg/download.png);
+      background-repeat: no-repeat;
+      background-color: #b9864d;
+      background-size: cover;
+      background-position: top;
+      height: 100%;
+
+      -webkit-background-clip: content-box;
     }
     .slide-3{
       background-image: url(imgg/school-2.jpg);
@@ -119,16 +129,17 @@
       </div>
 
       <div class="off-screen-menu" id="off-screen-menu">
-        <i class="fa-solid fa-xmark" id="fa-xmark"></i>
-        <p id="nameagain" class="absolute left-2">Hi.......</p>
+        <i class="fa-solid text-[#C7A246] fa-xmark" id="fa-xmark"></i>
+        <!-- <p id="nameagain" class="absolute left-2">Hi.......</p> -->
+        <h1 class="font-extrabold absolute left-2 text-[#C7A246] text-2xl capitalize">umar bn khattob</h1>
 
-        <ul class="aside-menu">
+        <ul class="aside-menu text-[#C7A246] text-left">
           <li><a href="#home">Home</a></li>
           <li id="aboutt"><a href="#">about</a>
-            <i id="rotate" class="fa-solid fa-greater-than transition-all duration-400 ml-28"></i>
+            <i id="rotate" class="fa-solid fa-greater-than transition-all duration-400 ml-50"></i>
           
   
-            <ul class="submenu hidden" id="submenu">
+            <ul class="submenu text-white text-center hidden" id="submenu">
               <li><a href="#our_history">Our History</a></li>
               <li><a href="#our_philosophy">Our Philosophy</a></li>
               <li><a href="#our_vision">Our Vision & Mission</a></li>
@@ -168,7 +179,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                   <!-- Slides -->
-                   <div class="swiper-slide slide-1">
+                   <div class="swiper-slide h-5/6 slide-1">
                   
                     <h1 class="max-md:text-sm">Where Arabic Mastery Meets Islamic Wisdom</h1>
                     <p class="text-[15px] max-md:text-[11px] max-md:mt-5">We aim to develop pious, knowledgeable leaders who will be beacons of light in their communities.
@@ -180,7 +191,7 @@
                   </button> 
 
                   </div>
-                  <div class="swiper-slide slide-2">Slide 2</div>
+                  <div class="swiper-slide ">Slide 2</div>
                   <div class="swiper-slide slide-3">Slide 3</div>
                   ...
               </div>

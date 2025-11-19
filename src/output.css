@@ -232,9 +232,6 @@
   .top-50 {
     top: calc(var(--spacing) * 50);
   }
-  .bottom-7 {
-    bottom: calc(var(--spacing) * 7);
-  }
   .left-2 {
     left: calc(var(--spacing) * 2);
   }
@@ -271,14 +268,35 @@
       max-width: 96rem;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .-mr-8 {
+    margin-right: calc(var(--spacing) * -8);
+  }
+  .-mr-98 {
+    margin-right: calc(var(--spacing) * -98);
+  }
+  .mr-0 {
+    margin-right: calc(var(--spacing) * 0);
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
+  }
+  .mr-8 {
+    margin-right: calc(var(--spacing) * 8);
+  }
+  .mr-28 {
+    margin-right: calc(var(--spacing) * 28);
+  }
+  .mr-98 {
+    margin-right: calc(var(--spacing) * 98);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -292,6 +310,9 @@
   .ml-28 {
     margin-left: calc(var(--spacing) * 28);
   }
+  .ml-50 {
+    margin-left: calc(var(--spacing) * 50);
+  }
   .block {
     display: block;
   }
@@ -303,6 +324,15 @@
   }
   .hidden {
     display: none;
+  }
+  .table {
+    display: table;
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-5\/6 {
+    height: calc(5/6 * 100%);
   }
   .h-\[39rem\] {
     height: 39rem;
@@ -316,23 +346,8 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .rotate-45 {
-    rotate: 45deg;
-  }
   .rotate-90 {
     rotate: 90deg;
-  }
-  .rotate-y-1 {
-    --tw-rotate-y: rotateY(1deg);
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .rotate-y-45 {
-    --tw-rotate-y: rotateY(45deg);
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .rotate-y-90 {
-    --tw-rotate-y: rotateY(90deg);
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -340,11 +355,23 @@
   .cursor-pointer {
     cursor: pointer;
   }
+  .resize {
+    resize: both;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .place-items-end {
+    place-items: end;
+  }
   .items-center {
     align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .space-x-5 {
     :where(& > :not(:last-child)) {
@@ -385,11 +412,17 @@
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
@@ -400,11 +433,20 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .pr-0 {
+    padding-right: calc(var(--spacing) * 0);
+  }
   .pr-0\.5 {
     padding-right: calc(var(--spacing) * 0.5);
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -454,6 +496,9 @@
   .italic {
     font-style: italic;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-85 {
     opacity: 85%;
   }
@@ -475,16 +520,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-opacity {
-    transition-property: opacity;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-transform {
-    transition-property: transform, translate, scale, rotate;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .delay-1 {
     transition-delay: 1ms;
   }
@@ -494,17 +529,9 @@
   .delay-3 {
     transition-delay: 3ms;
   }
-  .duration-300 {
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-  }
   .duration-400 {
     --tw-duration: 400ms;
     transition-duration: 400ms;
-  }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
   }
   .duration-700 {
     --tw-duration: 700ms;
@@ -513,10 +540,6 @@
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
-  }
-  .ease-in-out {
-    --tw-ease: var(--ease-in-out);
-    transition-timing-function: var(--ease-in-out);
   }
   .ease-out {
     --tw-ease: var(--ease-out);
@@ -625,6 +648,11 @@
   .md\:mx-auto {
     @media (width >= 48rem) {
       margin-inline: auto;
+    }
+  }
+  .md\:object-fill {
+    @media (width >= 48rem) {
+      object-fit: fill;
     }
   }
   .md\:text-3xl {
@@ -878,7 +906,7 @@
     max-width: calc(var(--spacing) * 100);
     flex-direction: column;
     align-items: center;
-    background-color: #B9864D;
+    background-color: #263238;
     padding-top: calc(var(--spacing) * 5);
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -1231,17 +1259,29 @@
     background-position: center;
     background-repeat: no-repeat;
     @media (width < 48rem) {
-      height: 150px;
+      height: 14em;
     }
   }
   .img-1 {
     background-image: url('imgg/arabiyah-1.jpg');
   }
   .img-2 {
-    background-image: url('imgg/quran-2.jpg');
+    background-image: url(imgg/school-2.jpg);
   }
   .img-3 {
-    background-image: url('imgg/hadith-3.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('imgg/download.png');
+    background-size: cover;
+    background-position: center;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .img-3:active {
+    background-image: url('imgg/download.png');
+    background-size: cover;
+    background-position: center;
   }
   .title {
     padding-bottom: calc(var(--spacing) * 5);

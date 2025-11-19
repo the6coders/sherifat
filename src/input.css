@@ -130,7 +130,7 @@ a:hover{
           
 }
 .off-screen-menu {
-    @apply bg-[#B9864D] h-full w-full font-bold text-lg max-w-100 fixed top-0
+    @apply bg-[#263238] h-full w-full font-bold text-lg max-w-100 fixed top-0
            flex flex-col items-center pt-5 text-white capitalize
            transition-all duration-700 ease-in-out -right-100;
      /* Initially hide the menu off-screen to the right */
@@ -251,16 +251,27 @@ a:hover{
 }
 .img{
   @apply rounded-xl h-[45vh] 
-          bg-no-repeat bg-cover bg-center max-md:h-[150px]; 
+          bg-no-repeat bg-cover bg-center max-md:h-[14em]; 
 }
 .img-1{
   @apply bg-[url('imgg/arabiyah-1.jpg')] 
 }
 .img-2{
-  @apply bg-[url('imgg/quran-2.jpg')]
+  @apply bg-[url(imgg/school-2.jpg)]
 }
-.img-3{
-  @apply bg-[url('imgg/hadith-3.jpg')]
+.img-3 {
+  /* Base Style: Dimmed Background Image */
+  /* 1. Dimmer Layer (rgba(0, 0, 0, 0.5)) 
+     2. Image URL
+  */
+  @apply bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('imgg/download.png')] 
+         bg-cover bg-center transition-all duration-300; /* Added transition for smooth effect */
+}
+/* New Rule: State when the user touches/presses the element */
+.img-3:active {
+  /* This rule overrides the background to contain ONLY the image URL, 
+     removing the dimming linear gradient layer */
+  @apply bg-[url('imgg/download.png')] bg-cover bg-center; 
 }
 .title{
   @apply text-center text-2xl pb-5 font-extrabold 

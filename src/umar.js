@@ -186,12 +186,12 @@ function changeBackGround(){
     
 let submitName = document.getElementById('submitName');
 let names = document.getElementById('names');
-let nameagain = document.getElementById("nameagain")
+// let nameagain = document.getElementById("nameagain")
 let welcomeNameInput = document.getElementById('welcomeName');
 let copyy = document.getElementById("copyy"); 
 let disapear = document.getElementById("disapear")
 let school_name = document.getElementById("school-name");
-nameagain.innerHTML = school_name.textContent;
+// nameagain.innerHTML = school_name.textContent;
 
 function clientName(userName){
     if(!userName){
@@ -285,7 +285,7 @@ function subMenuShowUp(){
         
     } else {
         submenu.style.display ='none';
-        rotate.classList.remove("rotate-90");
+        rotate.classList.remove("rotate-90")
     }
 }
 aboutt.addEventListener("click", subMenuShowUp);
