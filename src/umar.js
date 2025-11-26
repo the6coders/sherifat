@@ -1,3 +1,5 @@
+
+
 // include alphine.js 
 var chance = document.getElementById('chance');
 
@@ -347,3 +349,62 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(element);
   });
 });
+
+//testing
+// function checkPassword(firstpass , confpass){
+//     if( firstpass !== confpass){
+//         console.log("sorry the two passweod are not samwe")
+//     }
+//     else {
+//      console.log("congratulation both pass r correct")
+//     }
+// }
+
+// const uid = "123abc";
+// var firstName = prompt("psl lets know your firstName")
+// // var lastName = prompt("pls enter your lastnaem")
+// // var email = prompt("pls enter uour email")
+// // var nationality = prompt( "pls enter your country")
+// // var isLoggedInFromGogool = false;
+// // var courscount = 0;
+// var newPass = prompt("pls enter your password")
+// var confirmPassword = prompt("pls enter your password again")
+// var aftr = checkPassword(newPass , confirmPassword)
+
+// console.log(`   
+//     the userid is: ${uid}   
+//     the firstname is : ${firstName}
+//     the password is : ${newPass}
+//     `)
+
+let left_main_container = document.getElementById("left_main_container")
+let f_layer = document.getElementById("f-layer")
+
+function scrollToView(){
+    f_layer.classList.add("active")
+}
+left_main_container.addEventListener("mouseover" , scrollToView);
+
+function scrollToView(){
+    f_layer.classList.add("active")
+}
+left_main_container.addEventListener("touchstart" , scrollToView);
+
+function scrollToHide(){
+    f_layer.classList.remove("active")
+}
+left_main_container.addEventListener("mouseout" , scrollToHide);
+
+// function scrollToView(){
+//     if(left_main_container.addEventListener("mouseover" , scrollToView)){
+//          f_layer.classList.add("active")
+//     }
+//     else if(left_main_container.addEventListener("touchstart" , scrollToView);){
+//          f_layer.classList.add("active")
+//     }
+//     else {
+//          f_layer.classList.remove("active")
+//     }
+    
+    
+// }
