@@ -386,7 +386,7 @@ function scrollToView(){
 left_main_container.addEventListener("mouseover" , scrollToView);
 
 function scrollToView(){
-    f_layer.classList.add("active")
+    f_layer.classList.toggle("active")
 }
 left_main_container.addEventListener("touchstart" , scrollToView);
 
