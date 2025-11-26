@@ -386,7 +386,7 @@ function scrollToView(){
 left_main_container.addEventListener("mouseover" , scrollToView);
 
 function scrollToView(){
-    f_layer.classList.toggle("active")
+    f_layer.classList.add("active")
 }
 left_main_container.addEventListener("touchstart" , scrollToView);
 
@@ -395,16 +395,29 @@ function scrollToHide(){
 }
 left_main_container.addEventListener("mouseout" , scrollToHide);
 
-// function scrollToView(){
-//     if(left_main_container.addEventListener("mouseover" , scrollToView)){
-//          f_layer.classList.add("active")
-//     }
-//     else if(left_main_container.addEventListener("touchstart" , scrollToView);){
-//          f_layer.classList.add("active")
-//     }
-//     else {
-//          f_layer.classList.remove("active")
-//     }
-    
-    
-// }
+  let  showEvent = ["mouseover", "touchstart"];
+
+  showEvent.forEach(Event =>{
+    left_main_container.addEventListener("Event" , () => {
+        f_layer.classList.add("active");
+    });
+
+  });
+
+  showEvent.forEach(Event =>{
+    left_main_container.addEventListener(Event , () => {
+        f_layer.classList.add("active");
+    });
+
+  });
+
+   let hideEvent = ["mouseout", "touchend"]
+
+    hideEvent.forEach(Event =>{
+    left_main_container.addEventListener(Event , () => {
+        f_layer.classList.remove("active");
+    });
+
+  });
+
+
