@@ -69,16 +69,7 @@
       
 
     }
-    .slide-2{
-      background-image: url(imgg/download.png);
-      background-repeat: no-repeat;
-      background-color: #b9864d;
-      background-size: cover;
-      background-position: top;
-      height: 100%;
-
-      -webkit-background-clip: content-box;
-    }
+  
     .slide-3{
       background-image: url(imgg/school-2.jpg);
     }
@@ -94,7 +85,7 @@
     <div id="hide" class="opacity_dark opacity-85"></div>
     <div class="hero_section relative" id="home">
 
-      <div id="up_nav" class="up_nav_link">
+      <div id="up_nav" class="up_nav_link hidden">
         
         
            <div class="social_links">
@@ -172,17 +163,18 @@
       </div>
         
      
-      <div class="hero_page_content">
+      <div class="hero_page_content h-[100vh]">
 
               <!-- Slider main container -->
           <div class="swiper container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                   <!-- Slides -->
-                   <div class="swiper-slide h-5/6 slide-1">
+                   <!-- <div class="swiper-slide h-5/6 slide-1">
                   
                     <h1 class="max-md:text-sm">Where Arabic Mastery Meets Islamic Wisdom</h1>
-                    <p class="text-[15px] max-md:text-[11px] max-md:mt-5">We aim to develop pious, knowledgeable leaders who will be beacons of light in their communities.
+                    <p class="text-[15px] max-md:text-[11px] max-md:mt-5">We aim to develop 
+                      pious, knowledgeable leaders who will be beacons of light in their communities.
                 
                   </p>
 
@@ -190,9 +182,22 @@
                         <a href="#" class="hover:text-green-900 px-10 max-md:px-2 py-2" id="changeDark"">Apply Now </a>
                   </button> 
 
-                  </div>
-                  <div class="swiper-slide ">Slide 2</div>
-                  <div class="swiper-slide slide-3">Slide 3</div>
+                  </div> -->
+                  <div class="swiper-slide slide-2 px-10 max-md:text-center relative h-screen flex flex-col justify-center text-white
+                  bg-cover bg-center" style="background-image: url(imgg/cup-coffee-hero-pages.jpg)">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#B9864D] via-transparent to-black/10"></div> 
+                  <div class="absolute top-44 z-10 max-md:px-2">
+                    <h1 class="hero_text mb-5">School for Arabic and Islamic Studies</h1>
+                    <p class="max-md:text-lg font-extrabold">Where Arabic Mastery Meets Islamic Wisdom</p><br>
+        <p class="max-md:text-sm text-sm">We aim to empower students to become leaders in <br>
+           piety and knowledge, serving as beacons of light to their communities.
+          
+        </p>
+
+                  </div> 
+                  
+                </div>
+                  <!-- <div class="swiper-slide slide-3">Slide 3</div> -->
                   ...
               </div>
               <!-- If we need pagination -->
@@ -213,13 +218,9 @@
     
       
 
-        <!-- <h1 class="capitalize">umar bn khattob school for Arabic and Islamic studies</h1> -->
+        <!-- <h1 class="capitalize"></h1> -->
         <!-- <p class="capitalize italic">knowledge <span class="lowercase">is the </span> soul of sunnah</p> -->
-        <!-- <p class="max-md:text-lg font-bold">Where Arabic Mastery Meets Islamic Wisdom</p>
-        <p class="hero-text max-md:text-sm">We aim to empower students to become leaders in
-           piety and knowledge, serving as beacons of light to their communities.
-          
-        </p>
+        <!-- 
 
           <button class="" >
                 <a href="#" class="hover:text-green-900 btn px-10 py-2" id="changeDark"">Apply Now </a>
@@ -490,7 +491,46 @@
 
     </div>
 
-    <div id="contact_us" class="Contact-us_section relative h-[39rem] overflow-hidden">
+
+
+    <div id="contact_us" class="Contact-us_section relative h-[49rem] overflow-hidden">
+
+      <div class="faq-sec">
+        <h1 class="faq-heading">Frequetly Asked Question</h1>
+         <div class="faq-bold">No stress. No surprise.</div>
+
+         <p>just clear answers for calm, confident mornings.</p>
+
+        <div class="faq1 faq" id="faq">
+          <div class="fa1">
+
+            <h1>what time can</h1>
+            <i id="rotatee" class="fa-solid fa-greater-than transition-all duration-500 ease-in-out"></i>
+
+          </div>
+          <p class="hidden transition-all duration-500" id="faq-answer">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Similique, qui perferendis! Explicabo praesentium rem illo,
+             voluptate fugiat amet! Voluptatum, at. Itaque, dignissimos
+             ?
+            </p>
+        </div>
+        <!-- <div class="faq2 faq">
+          <div class="fa2"></div>
+        </div>
+        <div class="faq3 faq">
+          <div class="fa3"></div>
+        </div>
+        <div class="faq4 faq">
+          <div class="fa4"></div>
+        </div>
+        <div class="faq5 faq">
+          <div class="fa5"></div>
+        </div>
+
+      </div> -->
+
 
       <div id="succeffulMessege" class="succeffulMessege absolute left-20 top-50 z-10 hidden"> 
         
@@ -543,7 +583,7 @@
                     class="bottom_border_style">
             </div>
 
-            <div class="message ">
+            <div class="message">
               <textarea id="message" name="user_message" rows="2" cols="10"
                         placeholder="Type your message here..."
                         class="bottom_border_style"></textarea>
@@ -561,6 +601,7 @@
 
 
   </div>
+  
   <div class="footer_section">
     
     <!-- div.up_footer>.cont.cont${cont$}*4 -->

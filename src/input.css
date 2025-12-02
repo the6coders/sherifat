@@ -103,11 +103,11 @@ a:hover{
 .hero_nav_bar{
   @apply flex justify-between absolute z-30 w-full px-20 max-md:px-5 
          md:pr-2  text-white lg:rounded-b-2xl items-center space-x-20
-          py-0  bg-[#263238]
+          py-0
 }
 .logo_text{
-  @apply text-lg  font-bold capitalize leading-relaxed
-          max-lg:hidden
+  @apply capitalize leading-relaxed
+          max-lg:hidden font-extrabold text-[#C7A246] text-2xl
                 
 }
 .logo_nd_txt img{
@@ -118,10 +118,18 @@ a:hover{
 
 }
 .nav_bar{
-  @apply flex lg:gap-x-10 font-serif capitalize lg:text-lg 
-           max-md:hidden md:text-lg md:gap-x-7
+  @apply flex lg:gap-x-15 capitalize font-stretch-100% 
+           max-md:hidden  md:gap-x-7 text-xl
+           bg-linear-to-l from-[#C7A246] via-pink-500 to-[#C7A246] bg-clip-text 
+                     text-transparent font-bold
                
 }
+
+.hero_text{
+  @apply bg-linear-to-l from-white via-pink-500 to-[#C7A246] bg-clip-text 
+                     text-transparent text-5xl
+}
+
 .hamburger{
   @apply md:hidden 
 }
@@ -180,10 +188,6 @@ a:hover{
   @apply  text-xl text-white max-md:mt-0 max-md:text-sm
     relative  h-[30rem] max-md:h-[20rem] max-sm:h-[100vh]
           max-lg:text-2xl
-}
-
-.hero-text{
-  @apply max-md:text-sm
 }
 .guestname{
   @apply mt-15 max-md:mt-3 py-0  w-70 mx-auto flex justify-between pl-3;
@@ -353,6 +357,34 @@ a:hover{
   @apply bg-[#B9864D] text-white border-[#B9864D] border-b-3 border-t-3
           p-3 max-md:text-sm shadow-[#f7ecdf] rounded-t-full
 }
+
+/* FAQ SECIONS */
+
+.faq-sec{
+  @apply text-center mx-10 border-2 border-white max-sm:mx-5 px-40 max-sm:px-5
+
+}
+.faq-heading{
+  @apply text-3xl font-extrabold
+}
+.faq-bold{
+  @apply text-xl
+}
+.faq1{
+  @apply bg-sky-300 px-5 py-5 max-sm:py-5
+          rounded-2xl text-justify transition-all duration-500 ease-in-out
+}
+.fa1{
+  @apply flex justify-between  items-center text-2xl mb-5 font-extrabold max-sm:font-bold
+}
+
+/* .faq1.active{
+  @apply 
+} */
+
+
+
+
 .Contact-us_section{
   @apply bg-[#f7ecdf] p-10 relative text-black
 }

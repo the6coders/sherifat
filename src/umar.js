@@ -380,20 +380,20 @@ document.addEventListener("DOMContentLoaded", function() {
 let left_main_container = document.getElementById("left_main_container")
 let f_layer = document.getElementById("f-layer")
 
-function scrollToView(){
-    f_layer.classList.add("active")
-}
-left_main_container.addEventListener("mouseover" , scrollToView);
+// function scrollToView(){
+//     f_layer.classList.add("active")
+// }
+// left_main_container.addEventListener("mouseover" , scrollToView);
 
-function scrollToView(){
-    f_layer.classList.add("active")
-}
-left_main_container.addEventListener("touchstart" , scrollToView);
+// function scrollToView(){
+//     f_layer.classList.add("active")
+// }
+// left_main_container.addEventListener("touchstart" , scrollToView);
 
-function scrollToHide(){
-    f_layer.classList.remove("active")
-}
-left_main_container.addEventListener("mouseout" , scrollToHide);
+// function scrollToHide(){
+//     f_layer.classList.remove("active")
+// }
+// left_main_container.addEventListener("mouseout" , scrollToHide);
 
   let  showEvent = ["mouseover", "touchstart"];
 
@@ -420,4 +420,13 @@ left_main_container.addEventListener("mouseout" , scrollToHide);
 
   });
 
+//faq secition
+let faq = document.getElementById("faq")
+let faqAnswer = document.getElementById("faq-answer")
+let rotatee = document.getElementById("rotatee") 
 
+faq.addEventListener("click", () =>{
+    faqAnswer.classList.toggle("hidden")
+    rotatee.classList.toggle("rotate-90")
+
+});
