@@ -107,27 +107,31 @@ a:hover{
 }
 .logo_text{
   @apply capitalize leading-relaxed
-          max-lg:hidden font-extrabold text-[#C7A246] text-2xl
+          max-sm:bg-linear-to-l from-[#C7A246] via-pink-500
+           to-[#C7A246] max-sm:bg-clip-text 
+                    max-sm:text-transparent font-extrabold text-lg 
                 
 }
+
 .logo_nd_txt img{
   @apply h-20  w-23 max-md:h-15 
 }
 .logo_nd_txt{
-  @apply flex  justify-start  items-center gap-10;
+  @apply flex  justify-start  items-center gap-10
+  max-sm:rounded-2xl max-sm:border-r-8 max-sm:w-full max-sm:border-yellow-500;
 
 }
 .nav_bar{
   @apply flex lg:gap-x-15 capitalize font-stretch-100% 
            max-md:hidden  md:gap-x-7 text-xl
-           bg-linear-to-l from-[#C7A246] via-pink-500 to-[#C7A246] bg-clip-text 
+           bg-linear-to-l from-[#C7A246] via-pink-500 to-[#C7A246] bg-clip-text
                      text-transparent font-bold
                
 }
 
 .hero_text{
   @apply bg-linear-to-l from-white via-pink-500 to-[#C7A246] bg-clip-text 
-                     text-transparent text-5xl
+                     text-transparent text-5xl 
 }
 
 .hamburger{

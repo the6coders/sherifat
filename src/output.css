@@ -419,8 +419,18 @@
     }
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .to-black\/80 {
+    --tw-gradient-to: color-mix(in srgb, #000 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-black) 80%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-bottom-right {
+    background-position: right bottom;
   }
   .bg-center {
     background-position: center;
@@ -643,6 +653,16 @@
       font-size: 11px;
     }
   }
+  .max-sm\:h-12 {
+    @media (width < 40rem) {
+      height: calc(var(--spacing) * 12);
+    }
+  }
+  .max-sm\:w-12 {
+    @media (width < 40rem) {
+      width: calc(var(--spacing) * 12);
+    }
+  }
   .max-sm\:bg-white {
     @media (width < 40rem) {
       background-color: var(--color-white);
@@ -844,16 +864,32 @@
     }
   }
   .logo_text {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    --tw-gradient-from: #C7A246;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    --tw-gradient-via: var(--color-pink-500);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+    --tw-gradient-to: #C7A246;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
-    color: #C7A246;
     text-transform: capitalize;
-    @media (width < 64rem) {
-      display: none;
+    @media (width < 40rem) {
+      --tw-gradient-position: to left;
+      @supports (background-image: linear-gradient(in lab, red, red)) {
+        --tw-gradient-position: to left in oklab;
+      }
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+    @media (width < 40rem) {
+      background-clip: text;
+    }
+    @media (width < 40rem) {
+      color: transparent;
     }
   }
   .logo_nd_txt img {
@@ -868,6 +904,19 @@
     align-items: center;
     justify-content: flex-start;
     gap: calc(var(--spacing) * 10);
+    @media (width < 40rem) {
+      width: 100%;
+    }
+    @media (width < 40rem) {
+      border-radius: var(--radius-2xl);
+    }
+    @media (width < 40rem) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 8px;
+    }
+    @media (width < 40rem) {
+      border-color: var(--color-yellow-500);
+    }
   }
   .nav_bar {
     display: flex;
