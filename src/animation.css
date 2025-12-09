@@ -1,0 +1,36 @@
+/* ------------------------------------------- */
+/* 1. KEYFRAMES */
+/* ------------------------------------------- */
+
+/* Animation for scroll-triggered slide-up and fade-in */
+@keyframes slide-up-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ------------------------------------------- */
+/* 2. CLASSES TO APPLY ANIMATIONS (Non-Tailwind) */
+/* ------------------------------------------- */
+
+/* Initial state for elements waiting to be scrolled into view */
+.animate-on-scroll {
+  /* Set starting opacity and vertical shift */
+  opacity: 0;
+  transform: translateY(30px);
+  /* Apply the transition properties (matches the 800ms duration from Tailwind) */
+  transition: opacity 800ms ease-out, transform 800ms ease-out;
+}
+
+/* Final state applied by JavaScript when element is visible */
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
