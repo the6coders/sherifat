@@ -430,3 +430,4 @@ faq.addEventListener("click", () =>{
     rotatee.classList.toggle("rotate-90")
 
 });
+

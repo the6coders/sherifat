@@ -1,4 +1,17 @@
+/* choose one of the following */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default"; */
+
+
+/* input.css file */
 @import "tailwindcss";
+/* @plugin "daisyui"; */
+
+/* n */
+
+
+/* @import "tailwindcss"; */
 @tailwind utilities;
 @layer components{
   /*utitlity style*/
@@ -118,7 +131,7 @@ a:hover{
 }
 .logo_nd_txt{
   @apply flex  justify-start  items-center gap-10
-  max-sm:rounded-2xl max-sm:border-r-8 max-sm:w-full max-sm:border-yellow-500;
+  max-sm:rounded-2xl max-sm:border-r-8 max-sm:w-50 max-sm:border-yellow-500;
 
 }
 .nav_bar{
