@@ -357,21 +357,23 @@ a:hover{
 }
 .our-service-content{
   @apply grid grid-cols-3 gap-x-20 gap-y-10 max-md:grid-cols-1 py-10
-         text-center 
+         text-justify 
 }
 .service-content{
-  @apply shadow-[#f7ecdf] shadow-2xl py-5 max-sm:px-3 hover:scale-x-104 hover:scale-y-104
+  @apply  px-5 py-5 max-sm:px-3
   
-   bg-[#f7ecdf] rounded-2xl hover:bg-[#263238] hover:transition-all hover:text-white duration-800 ease-in-out
+   bg-[#f9fafb] rounded-2xl 
+   /* hover:transition-all duration-800 ease-in-out */
 }
-.service-content:nth-child(odd){
-  @apply bg-[#263238] text-white
-}
+
 .service-content i,.service-content h1{
   @apply text-[#C7A246]  mb-3 font-serif text-xl max-md:text-sm
 }
+.service-content h1{
+  @apply font-bold text-xl text-gray-600
+}
 .service-content i{
-  @apply bg-[#B9864D] text-white border-[#B9864D] border-b-3 border-t-3
+  @apply bg-green-400 text-white border-green-400 border-b-3 border-t-3
           p-3 max-md:text-sm shadow-[#f7ecdf] rounded-t-full
 }
 
