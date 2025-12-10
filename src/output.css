@@ -345,6 +345,12 @@
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
+  .-mb-5 {
+    margin-bottom: calc(var(--spacing) * -5);
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -419,6 +425,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-full {
+    min-height: 100%;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -668,6 +677,9 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -682,6 +694,9 @@
   }
   .px-20 {
     padding-inline: calc(var(--spacing) * 20);
+  }
+  .px-40 {
+    padding-inline: calc(var(--spacing) * 40);
   }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
@@ -1062,6 +1077,17 @@
       gap: calc(var(--spacing) * 5);
     }
   }
+  .max-sm\:border-4 {
+    @media (width < 40rem) {
+      border-style: var(--tw-border-style);
+      border-width: 4px;
+    }
+  }
+  .max-sm\:border-\[\#f9fafb\] {
+    @media (width < 40rem) {
+      border-color: #f9fafb;
+    }
+  }
   .max-sm\:bg-white {
     @media (width < 40rem) {
       background-color: var(--color-white);
@@ -1184,19 +1210,14 @@
       padding-inline: calc(var(--spacing) * 20);
     }
   }
-  .md\:py-1 {
+  .md\:px-40 {
     @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 1);
+      padding-inline: calc(var(--spacing) * 40);
     }
   }
   .md\:py-5 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 5);
-    }
-  }
-  .md\:py-10 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 10);
     }
   }
   .md\:py-15 {
