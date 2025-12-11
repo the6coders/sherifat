@@ -25,7 +25,7 @@
       transform: translateY(0);
     }
   }
-  .animate-on-scroll {
+  .animate-on-scroll{
   /* Set starting opacity and vertical shift */
   opacity: 0;
   transform: translateY(30px);
@@ -357,14 +357,15 @@ a:hover{
 }
 .our-service-content{
   @apply grid grid-cols-3 gap-x-20 gap-y-10 max-md:grid-cols-1 py-10
-         text-justify 
+         text-justify
 }
 .service-content{
-  @apply  px-5 py-5 max-sm:px-3
+  @apply  px-5 py-10 max-sm:py-8 max-sm:px-3 bg-[#f9fafb]  rounded-2xl border-2 border-[#f9fafb]
+   shadow-xl
   
-   bg-[#f9fafb] rounded-2xl 
    /* hover:transition-all duration-800 ease-in-out */
 }
+
 
 .service-content i,.service-content h1{
   @apply text-[#C7A246]  mb-3 font-serif text-xl max-md:text-sm
@@ -375,6 +376,10 @@ a:hover{
 .service-content i{
   @apply bg-green-400 text-white border-green-400 border-b-3 border-t-3
           p-3 max-md:text-sm shadow-[#f7ecdf] rounded-t-full
+}
+.content{
+  @apply h-[30rem] max-sm:h-[27rem] hover:shadow-2xl hover:scale-105 
+          transition-all duration-500 ease-in-out
 }
 
 /* FAQ SECIONS */
@@ -505,3 +510,8 @@ a:hover{
   @apply hidden;
 } */
 }
+
+/* newsite.html newsite css */
+/* .headers{
+  @apply 
+} */
