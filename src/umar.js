@@ -404,13 +404,6 @@ let f_layer = document.getElementById("f-layer")
 
   });
 
-  showEvent.forEach(Event =>{
-    left_main_container.addEventListener(Event , () => {
-        f_layer.classList.add("active");
-    });
-
-  });
-
    let hideEvent = ["mouseout", "touchend"]
 
     hideEvent.forEach(Event =>{
@@ -431,3 +424,17 @@ faq.addEventListener("click", () =>{
 
 });
 
+// let shadow_effect1 = document.querySelector(".level-card")
+let shadow_effect2 = document.getElementById("letstry")
+
+// let shadowEffects = ["mouseover" , "touchstart"]
+
+//     shadowEffects.forEach(Event =>{
+//     //      shadow_effect1.addEventListener(Event , () => {
+//     //     shadow_effect1.classList.add("active");
+//     // });
+//          shadow_effect2.addEventListener(Event , () => {
+//         shadow_effect2.classList.add("active");
+//     });
+
+//   });
