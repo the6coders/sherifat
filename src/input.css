@@ -515,6 +515,9 @@ a:hover{
 }
 
 /* newsite.html newsite css */
-/* .headers{
-  @apply 
-} */
+.level-cards{
+  @apply  bg-white p-6 md:p-8 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]
+}
+.lever-card-shapes{
+  @apply h-20 w-35 -ml-15 -mt-17 rounded-full
+}
