@@ -1382,6 +1382,12 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
+  .max-sm\:text-base {
+    @media (width < 40rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
   .max-sm\:text-lg {
     @media (width < 40rem) {
       font-size: var(--text-lg);
@@ -1402,6 +1408,11 @@
   .max-sm\:text-\[16\] {
     @media (width < 40rem) {
       color: 16;
+    }
+  }
+  .max-sm\:text-gray-600 {
+    @media (width < 40rem) {
+      color: var(--color-gray-600);
     }
   }
   .\*\:max-sm\:text-sm {
