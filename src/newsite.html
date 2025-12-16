@@ -153,7 +153,7 @@
                 </p>
             </div>
 
-            <div class="about_content  md:py-15 max-sm:py-5 md:px-20 max-sm:px-2 mx-auto grid grid-cols-2 gap-10 max-sm:gap-5 max-sm:grid-cols-1 text-justify">
+            <div class="about_content hidden md:py-15 max-sm:py-5 md:px-20 max-sm:px-2 mx-auto grid grid-cols-2 gap-10 max-sm:gap-5 max-sm:grid-cols-1 text-justify">
                
                 <div class="left_content flex flex-col gap-5 text-center bg-[#f9fafb] border-[#f9fafb]  rounded-2xl border-4 shadow-xl max-sm:p-3 md:py-5 md:px-10">
                      <h1 class="font-bold max-md:text-2xl lg:text-4xl text-gray-600">
@@ -638,12 +638,12 @@
 
 <!-- CTA section -->
 
-<div class="cta-banner-container bg-linear-to-br from-yellow-600 rounded-4xl to-green-400 py-16 max-sm:py-10 px-4 md:px-10 lg:px-20 relative overflow-hidden">
+<div class="cta-banner-container bg-linear-to-br from-yellow-600 rounded-4xl to-green-400 py-16 max-sm:py-7 px-4 md:px-10 lg:px-20 relative overflow-hidden">
     <div class="absolute inset-0 bg-cover" style="background-image: url('imgg/islamic-pattern-subtle.png');"></div>
     
     <div class="relative z-10 text-center max-w-5xl mx-auto">
          <i class="fa-solid fa-person-chalkboard text-4xl text-white mb-4"></i>
-        <h2 class="text-xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+        <h2 class="text-xl md:text-3xl font-extrabold text-white mb-4 leading-tight">
             Start your journey of seeking knowledge today!
         </h2>
         <p class="text-xl  max-sm:text-sm text-green-100 mb-8 max-w-3xl mx-auto">
@@ -651,14 +651,75 @@
         </p>
         
         <a href="registration_link_here.html" class="inline-block">
-            <button class="bg-white text-green-900 text-xl max-sm:text-lg font-bold
-             py-2 px-12 max-sm:px-6 rounded-full transform transition duration-300
-              hover:scale-105 uppercase italic tracking-wider">
-                     REGISTER NOW! </button>
+            <button class="bg-white text-green-600 text-xl max-sm:text-lg font-bold
+             py-2 px-12 max-sm:px-6 rounded-2xl
+               uppercase italic tracking-wider"><p class="hover:scale-105 transition duration-300">REGISTER NOW!</p>
+                      </button>
         </a>
         
     </div>
 </div>
+
+
+<!-- School Life / Gallery Preview Section -->
+<div class="gallery-container bg-white py-10 px-4 md:px-10 lg:px-20">
+    
+    <div class="text-center max-w-4xl mx-auto mb-12">
+        <p class="font-medium text-green-600 text-xl mb-2">Student lives</p>
+        <h2 class="text-2xl md:text-5xl text-green-600 font-extrabold  mb-4">
+           Moments from our school life
+        </h2>
+        <p class="text-lg max-sm:text-sm text-gray-600">
+           We believe that learning is not just about lessons, but a holistic 
+           experience. Explore photos of our classrooms, Quranic study circles, and
+            special celebrations that foster a sense of community among our students.
+        </p>
+    </div>
+    
+    <div class="gallery-preview grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
+        
+        <div class="gallery-item relative overflow-hidden rounded-2xl group">
+            <img src="imgg/school-2.jpg" alt="Classroom Learning" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                <div class="text-white">
+                    <h3 class="text-xl font-bold">Classroom Learning</h3>
+                    <p class="text-sm opacity-90">Interactive study sessions</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-item relative overflow-hidden rounded-2xl group">
+            <img src="imgg/download.png" alt="School Events" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                <div class="text-white">
+                    <h3 class="text-xl font-bold">religious occasions</h3>
+                    <p class="text-sm opacity-90">Islamic celebrations and events</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-item relative overflow-hidden rounded-2xl group">
+            <img src="imgg/dark.jpg" alt="Student Activities" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                <div class="text-white">
+                    <h3 class="text-xl font-bold">الأنشطة الطلابية</h3>
+                    <p class="text-sm opacity-90">مسابقات وأنشطة إبداعية</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="text-center">
+        <a href="gallery_page.html" class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+            <span>استكشف المعرض الكامل</span>
+            <i class="fa-solid fa-arrow-left rtl:rotate-180"></i>
+        </a>
+    </div>
+</div>
+<!-- End of Gallery Preview Section -->
+
+
 
 
 
