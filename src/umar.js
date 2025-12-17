@@ -101,37 +101,6 @@ var chance = document.getElementById('chance');
   document.addEventListener('DOMContentLoaded', fixedHeroSectWhenScrolled);
 
 
-// // script for when toggleMenu is click it bring the dropMenu -->
-
-let offScreenMenu = document.querySelector(".off-screen-menu");
-let hamburger = document.querySelector(".hamburger");
-let fa_xmark = document.querySelector(".fa-xmark");
-// let body = document.body;
- 
-function toggleMenu() {
-    if(offScreenMenu.classList.toggle('active')){
-        // Disable scrolling and interaction on the body
-    body.style.overflow = "hidden"; // Prevents scrolling
-    }
-    else{
-       body.style.overflow = "auto";
-    }
-   
-};
-
-function gone() {
-    
-    offScreenMenu.classList.remove('active');
-    body.style.overflow ="auto";
-}
-
-
-hamburger.addEventListener("click", toggleMenu);
-fa_xmark.addEventListener("click", gone);
-// body.addEventListener("click", gone);
-
-
-//menu ends here
 
 
     

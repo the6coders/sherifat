@@ -20,6 +20,42 @@
   
   <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 
+
+<!-- CSS Animation for Hover Effects -->
+<style>
+    .mission-card:hover .fa-bullseye {
+        animation: pulse 1.5s infinite;
+    }
+    
+    .vision-card:hover .fa-eye {
+        animation: blink 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+    
+    .mission-card, .vision-card {
+        perspective: 1000px;
+    }
+    
+    .mission-card > div, .vision-card > div {
+        backface-visibility: hidden;
+    }
+</style>
+
+
+
+
+
+
 </head>
 <body class="font-serif">
 
@@ -144,7 +180,7 @@
         <div class="about_us_container max-sm:px-5">
 
             <div class="w-full mx-auto text-center md:px-40">
-                <h1 class="text-green-400 -mb-5 about_us_header text-4xl max-sm:text-3xl font-bold">
+                <h1 class="text-green-400 -mb-5 about_us_header text-4xl max-sm:text-2xl font-bold">
                     About Us
                 </h1>
                 <p class="about_us_writeup text-xl max-sm:text-sm text-gray-600 rounded-2xl max-sm:border-4 max-sm:border-[#f9fafb]">
@@ -152,6 +188,259 @@
                         know, small enough that questions get answered, practical enough that it matters in your life.
                 </p>
             </div>
+
+<!-- Mission & Vision Section -->
+<div class="mission-vision-container py-16  md:px-10 lg:px-20 bg-gradient-to-b from-white to-gray-50">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-4xl mx-auto mb-16">
+        <h2 class="text-4xl max-sm:text-xl font-extrabold  text-green-400 mb-4">
+            Our Mission & Vision
+        </h2>
+        <p class="text-lg max-sm:text-[16px] text-gray-600">
+            Guiding Principles That Shape Our Educational Journey
+        </p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        
+        <!-- Mission Card -->
+        <div class="mission-card relative group">
+            <!-- Decorative Element -->
+            <div class="absolute -top-6 -left-6 w-24 h-24 bg-green-100 rounded-full opacity-30 group-hover:scale-110 transition-transform duration-500"></div>
+            
+            <div class="relative bg-white p-8 rounded-3xl shadow-xl border-l-4 border-green-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <!-- Icon Badge -->
+                <div class="absolute -top-5 right-8 w-16 h-16  max-sm:h-10 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-bullseye text-white text-2xl"></i>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-green-50  rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-star-and-crescent text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl max-sm:text-lg font-bold text-gray-800">Our Mission</h3>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        To provide a comprehensive education in the Islamic sciences and the Arabic language, enabling students to understand their faith directly from its primary sources.
+                    </p>
+                    
+                    <!-- Key Points -->
+                    <div class="space-y-4  max-sm:text-sm">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1 shrink-0">
+                                <i class="fa-solid fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                Cultivating exceptional character (<span class="text-green-600 font-semibold">Akhlaq</span>) and intellectual excellence
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1 shrink-0">
+                                <i class="fa-solid fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                Preparing exemplary Muslims who live by the Quran and Sunnah
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1 shrink-0">
+                                <i class="fa-solid fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                Direct understanding from authentic Islamic sources
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mission Quote -->
+                <div class="mt-8 p-4 bg-green-50 rounded-xl border border-green-100">
+                    <div class="flex flex-col items-start gap-2">
+                        <i class="fa-solid fa-quote-left text-green-500 text-xl mt-1"></i>
+                        
+                        <p class="text-gray-700 italic">
+                            "Education is not the learning of facts, but the training of the mind to think." – Albert Einstein
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vision Card -->
+        <div class="vision-card relative group">
+            <!-- Decorative Element -->
+            <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-yellow-100 rounded-full opacity-30 group-hover:scale-110 transition-transform duration-500"></div>
+            
+            <div class="relative bg-white p-8 rounded-3xl shadow-xl border-l-4 border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <!-- Icon Badge -->
+                <div class="absolute -top-5 left-8 w-16 h-16 max-sm:h-10 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-eye text-white text-2xl"></i>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-yellow-50 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-mosque text-yellow-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl max-sm:text-lg font-bold text-gray-800">Our Vision</h3>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        To be a distinguished center of Islamic learning, producing a generation of future scholars, Imams, and Huffaz.
+                    </p>
+                    
+                    <!-- Key Points -->
+                    <div class="space-y-4 pl-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-1 shrink-0">
+                                <i class="fa-solid fa-graduation-cap text-yellow-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                Empowering students to become leaders in piety and knowledge (<span class="text-yellow-600 font-semibold">'Ilm</span>)
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-1 shrink-0">
+                                <i class="fa-solid fa-hands-helping text-yellow-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                Confidently upholding the teachings of Islam
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-1 shrink-0">
+                                <i class="fa-solid fa-lightbulb text-yellow-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                Serving as beacons of light to their communities
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vision Goals -->
+                <div class="mt-8">
+                    <h4 class="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-target text-yellow-500"></i>
+                        Our 5-Year Goals
+                    </h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-yellow-50 p-3 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-yellow-600">50+</div>
+                            <div class="text-sm text-gray-600">Qualified Huffaz</div>
+                        </div>
+                        <div class="bg-yellow-50 p-3 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-yellow-600">1000+</div>
+                            <div class="text-sm text-gray-600">Students Enrolled</div>
+                        </div>
+                        <div class="bg-yellow-50 p-3 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-yellow-600">20+</div>
+                            <div class="text-sm text-gray-600">Certified Instructors</div>
+                        </div>
+                        <div class="bg-yellow-50 p-3 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-yellow-600">5+</div>
+                            <div class="text-sm text-gray-600">Community Programs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Connecting Bridge -->
+    <div class="relative max-w-6xl mx-auto mt-12">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-full border-t border-dashed border-gray-300"></div>
+        </div>
+        <div class="relative flex justify-center">
+            <div class="bg-gradient-to-r from-green-500 to-yellow-500 text-white px-8 py-3 rounded-full shadow-lg flex items-center gap-3">
+                <i class="fa-solid fa-link"></i>
+                <span class="font-semibold">Mission Drives Vision</span>
+                <i class="fa-solid fa-link"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Core Values -->
+    <div class="max-w-5xl mx-auto mt-16">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Our Core Values</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition-shadow duration-300">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-book-quran text-green-600 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-gray-800 mb-2">Quranic Guidance</h4>
+                <p class="text-sm text-gray-600">Rooted in the teachings of the Holy Quran</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition-shadow duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-scale-balanced text-blue-600 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-gray-800 mb-2">Excellence</h4>
+                <p class="text-sm text-gray-600">Striving for the highest standards in education</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition-shadow duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-heart text-purple-600 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-gray-800 mb-2">Compassion</h4>
+                <p class="text-sm text-gray-600">Teaching with kindness and understanding</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition-shadow duration-300">
+                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-handshake text-yellow-600 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-gray-800 mb-2">Community</h4>
+                <p class="text-sm text-gray-600">Building strong, supportive relationships</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CTA -->
+    <div class="text-center mt-16">
+        <a href="admissions.html" class="btn btn-success btn-lg gap-3 px-8">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Join Our Mission
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <p class="text-gray-500 mt-4">Become part of our journey towards Islamic excellence</p>
+
+         <div class="mt-16 text-center">
+            <p class="text-2xl font-arabic text-green-700 font-bold">
+                "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ"
+            </p>
+            <p class="text-gray-500 mt-2 italic">The best among you are those who learn the Qur'an and teach it.</p>
+        </div>
+    </div>
+    
+</div>
+<!-- End of Mission & Vision Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="about_content hidden md:py-15 max-sm:py-5 md:px-20 max-sm:px-2 mx-auto grid grid-cols-2 gap-10 max-sm:gap-5 max-sm:grid-cols-1 text-justify">
                
@@ -318,16 +607,39 @@
    <div class="our-service-container py-5 max-sm:py-8 px-4 md:px-12 lg:px-20 bg-[#f9fafb]">
     
     <div class="our-service-header text-center max-w-4xl mx-auto mb-8">
-        <p class="font-extrabold text-fg-brand text-2xl md:text-4xl mb-2">مراحل الدراسة</p>
+        <p class="font-extrabold text-fg-brand text-2xl md:text-4xl mb-2">Study stages</p>
         <!-- <h1 class="font-extrabold text-3xl md:text-4xl text-gray-800 leading-tight">
             ابدأ رحلة الإتقان: مستويات تناسب الجميع
         </h1> -->
         <p class="mt-4 text-gray-600 text-lg">
-            نقدم منهجًا منظمًا يبدأ من أساسيات القراءة وينتهي بالتعمق في الفقه واللغة العربية المتقدمة.
+           We offer a structured curriculum that begins with the basics of reading and ends with in-depth study of jurisprudence and advanced Arabic language.
         </p>
     </div>
     
     <div class="our-service-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+
+        <div class="level-cards">
+             <div class="bg-green-600 lever-card-shapes"></div>
+            <div class="text-center">
+                <i class="fa-solid fa-mosque text-4xl text-green-600 mb-4"></i>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">مستوى الأطفال (Children)</h2>
+                <span class="text-sm font-medium text-gray-500">Early Learning Stage</span>
+            </div>
+            <div class="mt-5 text-gray-700 text-justify">
+                <p>
+                   An interactive and fun curriculum that focuses on building the child’s relationship with the Quran, the Arabic language, and Islamic ethics.
+                </p>
+                <ul class="mt-4 space-y-2 text-sm text-left list-disc list-inside font-semibold text-gray-800">
+                    <li>التحفيظ</li>
+                    <li>النصوص</li>
+                    <li>الحديث</li>
+                    <li>الأذكار</li>
+                    <li>العروبية (لغة عربية بسيطة)</li>
+                    <li>الأخلاق والآداب</li>
+                </ul>
+            </div>
+            <a href="#" class="mt-6 block text-center bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">انضم للخبراء</a>
+        </div>
 
         <div class="level-cards">
             <div class="bg-[#B9864D] lever-card-shapes"></div>
@@ -339,7 +651,7 @@
             </div>
             <div class="mt-5 text-gray-800 text-justify">
                 <p>
-                    ركز على تعلم الحروف، وقواعد التجويد الأساسية، والمفردات العربية اليومية. يشمل ذلك إقامة الصلاة وأساسيات العقيدة.
+                   Focus on learning the alphabet, basic rules of Tajweed (Quranic recitation), and everyday Arabic vocabulary. This includes performing the prayer and the fundamentals of faith.
                 </p>
                 <ul class="mt-4 space-y-2 text-sm text-left list-disc list-inside font-semibold text-gray-800">
                     <li>النحو (قواعد اللغة العربية)</li>
@@ -364,7 +676,7 @@
             </div>
             <div class="mt-5 text-gray-700 text-justify">
                 <p>
-                    التركيز على القواعد النحوية والصرفية المتقدمة لتعزيز الفهم العميق للقرآن والسنة.
+                   Focus on advanced grammar and morphology to promote a deep understanding of the Qur’an and Sunnah.
                 </p>
                 <ul class="mt-4 space-y-2 text-sm text-left list-disc list-inside font-semibold text-gray-800">
                     <li>النحو (متقدم)</li>
@@ -380,28 +692,7 @@
             <a href="#" class="mt-6 block text-center bg-yellow-600 text-white py-3 rounded-xl font-semibold hover:bg-yellow-700 transition">اكتشف المزيد</a>
         </div>
         
-        <div class="level-cards">
-             <div class="bg-green-600 lever-card-shapes"></div>
-            <div class="text-center">
-                <i class="fa-solid fa-mosque text-4xl text-green-600 mb-4"></i>
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">مستوى الأطفال (Children)</h2>
-                <span class="text-sm font-medium text-gray-500">Early Learning Stage</span>
-            </div>
-            <div class="mt-5 text-gray-700 text-justify">
-                <p>
-                    منهج تفاعلي وممتع يركز على بناء علاقة الطفل بالقرآن واللغة العربية والأخلاق الإسلامية.
-                </p>
-                <ul class="mt-4 space-y-2 text-sm text-left list-disc list-inside font-semibold text-gray-800">
-                    <li>التحفيظ</li>
-                    <li>النصوص</li>
-                    <li>الحديث</li>
-                    <li>الأذكار</li>
-                    <li>العروبية (لغة عربية بسيطة)</li>
-                    <li>الأخلاق والآداب</li>
-                </ul>
-            </div>
-            <a href="#" class="mt-6 block text-center bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">انضم للخبراء</a>
-        </div>
+        
     </div>
 </div>
 
@@ -1094,59 +1385,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Back to Top JavaScript -->
-<script>
-    
-    let backToTopButton = document.getElementById('backToTop');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-           
-            backToTopButton.classList.remove('hidden');
-        } else {
-           
-            backToTopButton.classList.add("hidden");
-        }
-    });
-    
-    backToTopButton.addEventListener("click" , () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-    
-    // Newsletter Form Submission
-    document.addEventListener('DOMContentLoaded', function() {
-        const newsletterForm = document.querySelector('.join');
-        if (newsletterForm) {
-            newsletterForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const emailInput = this.querySelector('input[type="email"]');
-                if (emailInput.value) {
-                    // Here you would typically send the email to your server
-                    alert('Thank you for subscribing to our newsletter!');
-                    emailInput.value = '';
-                }
-            });
-        }
-    });
-</script>
-
        
 
     </div>
@@ -1158,6 +1396,6 @@
      <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
      <!-- end of flowbite js -->
-     <script type="text/javascript" src="umar.js"></script>
+     <script type="text/javascript" src="school.js"></script>
 </body>
 </html>
