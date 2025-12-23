@@ -1,189 +1,468 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="./output.css" rel="stylesheet">
-  
- 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>about-us - Umar ibn Khattab Islamic School</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" /> -->
+
+      <link href="./output.css" rel="stylesheet">
+      <!-- <link href="https://cdn.jsdelivr.net/combine/npm/daisyui@5/base/rootscrollgutter.css,npm/daisyui@5/base/scrollbar.css,npm/daisyui@5/base/rootcolor.css,npm/daisyui@5/base/rootscrolllock.css,npm/daisyui@5/base/reset.css,npm/daisyui@5/base/svg.css,npm/daisyui@5/base/properties.css,npm/daisyui@5/components/input.css,npm/daisyui@5/components/menu.css,npm/daisyui@5/components/toggle.css,npm/daisyui@5/components/checkbox.css,npm/daisyui@5/components/select.css,npm/daisyui@5/components/button.css,npm/daisyui@5/theme/light.css" rel="stylesheet" type="text/css" /> -->
+      <!-- css animation -->
+      <!-- <link rel="stylesheet" href="animations.css"> -->
+      
+      <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .arabic-font {
+            font-family: 'Amiri', serif;
+        }
+        
+        .section-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230964b0' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #0c4b8a 0%, #0a9b94 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(12, 75, 138, 0.9) 0%, rgba(10, 155, 148, 0.9) 100%);
+        }
+        
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #0c4b8a;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px rgba(12, 75, 138, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-item::before {
+                left: -18px;
+            }
+        }
+    </style>
+
+
 </head>
-<body class="relative z-40">
-  <div class="sections_container">
-    <div id="hide" class="opacity_dark opacity-85"></div>
-    <div class="hero_section relative" id="home">
+<body>
 
-      <div id="up_nav" class="up_nav_link">
-        
-        
-           <div class="social_links">
-          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-telegram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://wa.me/2349133750520"><i class="fa-brands fa-square-whatsapp"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </div>      
-        
-      </div>
 
-      <div id="heroNavBar" class="hero_nav_bar">
-        <div class="logo_nd_txt">
-          <img src="imgg\shc_icon-removebg-preview.png" alt="school logo">
+  <body class="bg-gray-50 text-gray-800">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <!-- <i class="fas fa-mosque text-3xl text-blue-600"></i>
+                    <span class="text-2xl font-bold arabic-font text-blue-800">المسجد</span> -->
 
+                    <img src="imgg/shc_icon-removebg-preview.png" class="h-7" alt="umar bn khattob" />
+                    <span class="text-2xl font-bold arabic-font text-blue-800">Umar bn khattob</span>
+                
+                </div>
+                <div class="md:flex space-x-8 max-md:hidden">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="/about" class="text-blue-600 font-medium border-b-2 border-blue-600">About</a>
+                    <a href="/programs" class="text-gray-700 hover:text-blue-600 font-medium">Programs</a>
+                    <a href="/events" class="text-gray-700 hover:text-blue-600 font-medium">Events</a>
+                    <a href="/contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 arabic-font">من نحن</h1>
+            <p class="text-2xl md:text-3xl font-light mb-8">Our Story, Mission & Vision</p>
+            <p class="text-xl max-w-3xl mx-auto opacity-90">Serving the community since 1995 with faith, knowledge, and compassion</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20 section-pattern">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">Our Journey</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Founded in 1995, our Islamic Center began as a small community gathering in a rented space. 
+                        Driven by a vision to create a spiritual home for Muslims in our city, we have grown into 
+                        a vibrant hub serving thousands of families.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Today, we stand as a beacon of faith, education, and community service, offering daily prayers, 
+                        Quran classes, youth programs, and interfaith initiatives that enrich lives and strengthen bonds.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-100 p-4 rounded-lg">
+                            <i class="fas fa-calendar-alt text-blue-600 text-2xl"></i>
+                            <p class="font-bold text-blue-800 mt-2">Since 1995</p>
+                        </div>
+                        <div class="bg-green-100 p-4 rounded-lg">
+                            <i class="fas fa-users text-green-600 text-2xl"></i>
+                            <p class="font-bold text-green-800 mt-2">5000+ Members</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                        <img src="imgg/school-2.jpg" 
+                             alt="Our Building" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">Our First Building - 2001</h3>
+                            <p class="text-gray-600">The cornerstone of our community, purchased through generous donations and community efforts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Our Guiding Principles</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">The foundation upon which we build our community and services</p>
+            </div>
             
-          <p id="names">Hi.......</p>      
-          
-      
-          <h3 class="logo_text">UMAR BN KHaTTOB <br><span class="">institute</span></h3>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Mission Card -->
+                <div class="bg-blue-50 rounded-2xl p-8 shadow-lg border-l-4 border-blue-500">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-bullseye text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-800">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-6">
+                        To serve as a spiritual, educational, and social center that nurtures faith, 
+                        promotes Islamic values, and contributes positively to society through compassion, 
+                        knowledge, and unity.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Provide authentic Islamic education</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Foster community bonds and support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Promote interfaith understanding</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Vision Card -->
+                <div class="bg-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-500">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-eye text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-green-800">Our Vision</h3>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-6">
+                        To be a model Islamic institution that inspires spiritual growth, 
+                        empowers future generations, and builds bridges of understanding 
+                        within our diverse society.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-500 mr-3"></i>
+                            <span>Center of excellence in Islamic learning</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-500 mr-3"></i>
+                            <span>Inclusive community for all Muslims</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-500 mr-3"></i>
+                            <span>Positive contributor to society</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-       
-        <ul class="nav_bar">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">about</a></li>
-          <!-- <li><a href="#program">program</a></li> -->
-          <li><a href="#why_choose">why_us</a></li>
-          <li><a href="gallary">gallery</a></li>
-          <li><a href="#contact_us">contact_us</a></li>
-        </ul>
+    </section>
 
-      <div class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-
-      <div class="off-screen-menu" id="off-screen-menu">
-        <i class="fa-solid fa-xmark" id="fa-xmark"></i>
-        <p id="nameagain" class="absolute left-2">Hi.......</p>
-
-      <ul class="aside-menu">
-        <li><a href="#home">Home</a></li>
-        <li id="aboutt"><a href="#">about</a>
-          <i class="fa-solid fa-greater-than ml-28"></i>
-        
-          <ul class="sub-menu hidden" id="submenu">
-            <li><a href="#our_history">Our History</a></li>
-            <li><a href="#our_philosophy">Our Philosophy</a></li>
-            <li><a href="#our_vision">Our Vision & Mission</a></li>
-          </ul>
-        </li>
-        <li><a href="#why_choose">why_us</a></li>
-        <li><a href="gallary">gallery</a></li>
-        <li><a href="#contact_us">contact_us</a></li>
-      </ul>
-
-    </div>
-
-       
-      </div>
-        
-      <div class="hero_page_content  md:mx-auto w-full">
-      
-        <p class="font-bold  max-md:mt-5 max-md:font-serif">Where Arabic Mastery Meets Islamic Wisdom</p>
-       
-         
-      </div>
-      <div class="opacity_dark"></div>   
-     
-    </div>   
-
-    <div class="about_section animate-square-in-center" id="about">
-
-      <div class="main_about_us">
-               
-        <div class="right_main_about_us">
-          <img src="imgg/koran1.jpg" class="h-full">
-
+    <!-- Statistics -->
+    <section class="py-20 bg-gradient-to-r from-blue-900 to-green-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">By The Numbers</h2>
+                <p class="text-xl opacity-90">Our impact in the community</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="stat-card text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
+                    <i class="fas fa-user-graduate text-4xl mb-4"></i>
+                    <h3 class="text-5xl font-bold mb-2">450+</h3>
+                    <p class="opacity-90">Students Enrolled</p>
+                </div>
+                
+                <div class="stat-card text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
+                    <i class="fas fa-book-quran text-4xl mb-4"></i>
+                    <h3 class="text-5xl font-bold mb-2">25+</h3>
+                    <p class="opacity-90">Weekly Programs</p>
+                </div>
+                
+                <div class="stat-card text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
+                    <i class="fas fa-hands-helping text-4xl mb-4"></i>
+                    <h3 class="text-5xl font-bold mb-2">1200+</h3>
+                    <p class="opacity-90">Families Served</p>
+                </div>
+                
+                <div class="stat-card text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
+                    <i class="fas fa-calendar-check text-4xl mb-4"></i>
+                    <h3 class="text-5xl font-bold mb-2">28</h3>
+                    <p class="opacity-90">Years of Service</p>
+                </div>
+            </div>
         </div>
-        <div class="left_main_about_us">
-          <h1>About Us</h1>    
-          <p class="mb-2">welcome to umar bn khattob</p>
-          <p>Our school was established with a singular vision: to be a sanctuary for traditional
-             Islamic and Arabic knowledge. Our journey began with a deep-seated commitment to preserve
-              the teachings of the Quran and the Sunnah, providing a complete education that nurtures
-               the student's heart, soul, and intellect.
-          </p>
+    </section>
 
+    <!-- Timeline Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Our Journey Through Time</h2>
+                <p class="text-xl text-gray-600">Milestones that shaped our community</p>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Timeline line -->
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-200"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-12">
+                    <!-- Item 1 -->
+                    <div class="relative pl-12 md:pl-0 md:flex md:items-center md:even:flex-row-reverse">
+                        <div class="md:w-1/2 md:px-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg">
+                                <div class="text-blue-600 font-bold text-lg">1995</div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Humble Beginnings</h3>
+                                <p class="text-gray-600">Founded with 50 families in a rented community hall for Friday prayers</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="relative pl-12 md:pl-0 md:flex md:items-center">
+                        <div class="md:w-1/2"></div>
+                        <div class="md:w-1/2 md:px-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg">
+                                <div class="text-blue-600 font-bold text-lg">2001</div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">First Permanent Home</h3>
+                                <p class="text-gray-600">Purchased and renovated our first building with community donations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="relative pl-12 md:pl-0 md:flex md:items-center md:even:flex-row-reverse">
+                        <div class="md:w-1/2 md:px-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg">
+                                <div class="text-blue-600 font-bold text-lg">2010</div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Full-Time School Established</h3>
+                                <p class="text-gray-600">Opened Al-Noor Islamic School with 100 students from K-5</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="relative pl-12 md:pl-0 md:flex md:items-center">
+                        <div class="md:w-1/2"></div>
+                        <div class="md:w-1/2 md:px-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg">
+                                <div class="text-blue-600 font-bold text-lg">2020</div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Community Expansion</h3>
+                                <p class="text-gray-600">Completed new wing with gymnasium, library, and community kitchen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       
-        <div class="left_main_about_us">
-          <h1>Our Mission & Vision</h1>    
-          <p class="mb-2">Our Mission:</p>
-          <p>To provide a comprehensive education in the Islamic sciences and 
-            the Arabic language, enabling students to understand their faith
-             directly from its primary sources. We are dedicated to cultivating 
-             exceptional character (Akhlaq) and intellectual excellence, preparing 
-             students to be exemplary Muslims who live by the Quran and the Sunnah.
-          </p>
-          <p class="mb-2 max-md:border-t-2 max-md:border-green-600">Our Vision:</p>
-          <p>To be a distinguished center of Islamic learning, producing a generation
-             of future scholars, Imams, and Huffaz. We aim to empower students to become 
-             leaders in piety and knowledge ('Ilm), confidently upholding the teachings of
-              Islam and serving as beacons of light to their communities.
-          </p>
+    </section>
 
+    <!-- Leadership Team -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Our Leadership</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dedicated individuals guiding our community with wisdom and compassion</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white text-3xl font-bold">
+                            AA
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800">Ahmed Al-Mansoori</h3>
+                        <p class="text-blue-600 text-center font-medium mb-4">Imam & Director</p>
+                        <p class="text-gray-600 text-center text-sm">15+ years of Islamic scholarship and community leadership</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center text-white text-3xl font-bold">
+                            FA
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800">Fatima Abdullah</h3>
+                        <p class="text-blue-600 text-center font-medium mb-4">Education Director</p>
+                        <p class="text-gray-600 text-center text-sm">PhD in Islamic Studies, 10+ years in Islamic education</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-3xl font-bold">
+                            MK
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800">Mohammed Khan</h3>
+                        <p class="text-blue-600 text-center font-medium mb-4">Youth Director</p>
+                        <p class="text-gray-600 text-center text-sm">Specializing in youth engagement and mentorship programs</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 flex items-center justify-center text-white text-3xl font-bold">
+                            SA
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800">Sara Al-Farsi</h3>
+                        <p class="text-blue-600 text-center font-medium mb-4">Community Outreach</p>
+                        <p class="text-gray-600 text-center text-sm">Building interfaith bridges and community partnerships</p>
+                    </div>
+                </div>
+            </div>
         </div>
-         <div class="right_main_about_us">
-          <img src="imgg/koran1.jpg" class="rounded-4xl">
+    </section>
 
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Become Part of Our Community</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">Join us in prayer, learning, and serving. Together, we can build a stronger, more vibrant community.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 text-lg">
+                    <i class="fas fa-hands-praying mr-2"></i> Visit Us
+                </a>
+                <a href="#" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 text-lg">
+                    <i class="fas fa-heart mr-2"></i> Support Our Mission
+                </a>
+            </div>
         </div>
+    </section>
 
-      </div>
-      
- 
-    
-    
-  <div class="footer_section">
-    
-    <!-- div.up_footer>.cont.cont${cont$}*4 -->
-    <div class="up_footer">
-      <div class="cont cont1">
-        <h1 class="font-extrabold text-sky-300 text-2xl capitalize">umar bn khattob</h1>
-        <p class="leading-normal mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            odit animi repellendus est explicabo unde!
-        </p>
-      </div>
-      <div class="cont cont2">
-        <p class="right_border">link</p>
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">program</a></li>
-          <li><a href="#">why_us</a></li>
-        </ul>
-      </div>
-      <div class="cont cont3">
-         <p class="right_border">others</p>
-        <ul>
-          <li><a href="#">terms of service</a></li>
-          <li><a href="#">privacy policy</a></li>
-          <li><a href="#">contact_us</a></li>
-          <li><a href="#">gallary</a></li>
-        </ul>
-      </div>
-      <div class="cont cont4">
-        <div>
-          <p class="right_border">others</p>
-        </div> <div class="max-md:flex">
-          <p class="mr-5">follow us on social media</p>
-        
-          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-telegram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://wa.me/2349054916257"><i class="fa-brands fa-square-whatsapp"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-mosque text-3xl text-blue-400"></i>
+                        <span class="text-2xl font-bold arabic-font">المسجد الإسلامي</span>
+                    </div>
+                    <p class="text-gray-400">123 Peace Street, Community City</p>
+                    <p class="text-gray-400">contact@islamiccenter.org | (123) 456-7890</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-4">&copy; 2024 Islamic Center. All rights reserved.</p>
+                    <div class="flex space-x-4 justify-center md:justify-end">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-       
-        
-        
-      </div>
-    </div>
-    <div class="down_footer">
-      <div class="down down1">&copy; 2026, Umar Bn khattob.</div>
-      <div class="down down2">All rights reserved.</div>
-    </div>
-  </div>
+    </footer>
   
-  <script type="text/javascript" src="umar.js"></script>
+  
 
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+     <!-- end of flowbite js -->
+     <script type="text/javascript" src="school.js"></script>
 </body>
- 
- 
+</html>
