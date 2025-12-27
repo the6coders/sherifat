@@ -64,3 +64,55 @@
     //menu ends here
 
 // });
+
+// side menu bar with hamburger
+
+
+
+// Simple working JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuPanel = document.getElementById('menu-panel');
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const backdrop = document.getElementById('menu-backdrop');
+    
+    // Open menu
+    function openMenu() {
+        mobileMenu.classList.remove('hidden');
+        // setTimeout(() => {
+            menuPanel.classList.remove('translate-x-full');
+            backdrop.classList.toggle("hidden")
+        // }, 10);
+    }
+    
+    // Close menu
+    function closeMenu() {
+        menuPanel.classList.add('translate-x-full');
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 300);
+    }
+    
+    // Add event listeners
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', openMenu);
+    }
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeMenu);
+    }
+    
+    if (backdrop) {
+        backdrop.addEventListener('click', closeMenu);
+    }
+    
+    // Close with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+            closeMenu();
+        }
+    });
+});
+

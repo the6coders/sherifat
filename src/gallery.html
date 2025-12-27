@@ -153,6 +153,199 @@
         </nav>
 
 
+
+                             <!-- Mobile Menu Component -->
+<div id="mobile-menu" class="fixed inset-0 z-50 md:hidden">
+    <!-- Backdrop -->
+    <div id="menu-backdrop" class="absolute inset-0 bg-translate"></div>
+    
+    <!-- Menu Panel -->
+    <div class="absolute right-0 top-0 h-full w-80 bg-white shadow-xl transition-transform duration-300 ease-in-out translate-x-full" id="menu-panel">
+        
+        <!-- Header Section -->
+        <div class="bg-gradient-to-r from-green-600 to-green-400 p-6">
+            <!-- Close Button & Logo -->
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-mosque text-2xl text-white"></i>
+                    <span class="font-bold text-white text-lg">Umar Bn Khattob</span>
+                </div>
+                <button id="close-menu" class="text-white hover:text-green-100 transition-colors">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+
+            </div>
+            
+            <!-- User Profile -->
+            <!-- <div class="flex items-center space-x-4 p-3 bg-white bg-opacity-20 rounded-xl">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-300 flex items-center justify-center text-white font-bold text-lg">
+                    U
+                </div>
+                <div>
+                    <h2 class="font-bold text-white text-lg">Umar Bin Khattab</h2>
+                    <p class="text-green-100 text-sm">Parent Account</p>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Menu Content -->
+        <div class="h-[calc(100vh-280px)] overflow-y-auto p-2">
+            <ul>
+                <!-- Home -->
+                <li>
+                    <a href="index.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 hover:translate-x-1 transition-all duration-200">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                            <i class="fas fa-home text-green-600"></i>
+                        </div>
+                        <span class="font-medium text-gray-800">Home</span>
+                    </a>
+                </li>
+
+                <!-- Parent Portal -->
+                <li>
+                    <details class="group">
+                        <summary class="flex items-center justify-between p-3 rounded-lg hover:bg-green-50 cursor-pointer transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-user-circle text-green-600"></i>
+                                </div>
+                                <span class="font-medium text-gray-800">Parent Portal</span>
+                            </div>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <div class="mt-2 ml-12 space-y-2">
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Student Progress
+                            </a>
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Attendance
+                            </a>
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Fees & Payments
+                            </a>
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Events Calendar
+                            </a>
+                        </div>
+                    </details>
+                </li>
+
+                <!-- Academics -->
+                <li>
+                    <details class="group">
+                        <summary class="flex items-center justify-between p-3 rounded-lg hover:bg-green-50 cursor-pointer transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-book-open text-green-600"></i>
+                                </div>
+                                <span class="font-medium text-gray-800">Academics</span>
+                            </div>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <div class="mt-2 ml-12 space-y-2">
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Quran Studies
+                            </a>
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Arabic Language
+                            </a>
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Islamic Studies
+                            </a>
+                            <a href="#" class="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                                Curriculum
+                            </a>
+                        </div>
+                    </details>
+                </li>
+
+                <!-- Why Choose Us -->
+                <li>
+                    <a href="about.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 hover:translate-x-1 transition-all duration-200">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                            <i class="fas fa-star text-green-600"></i>
+                        </div>
+                        <span class="font-medium text-gray-800">Why Choose Us</span>
+                    </a>
+                </li>
+
+                <!-- Gallery -->
+                <li>
+                    <a href="gallery.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 hover:translate-x-1 transition-all duration-200">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                            <i class="fas fa-images text-green-600"></i>
+                        </div>
+                        <span class="font-medium text-gray-800">Gallery</span>
+                    </a>
+                </li>
+
+                <!-- Contact Us -->
+                <li>
+                    <a href="#contact_us" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 hover:translate-x-1 transition-all duration-200">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                            <i class="fas fa-envelope text-green-600"></i>
+                        </div>
+                        <span class="font-medium text-gray-800">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Quick Links -->
+            <div class="mt-8 pt-6 border-t border-gray-200">
+                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 px-1">Quick Links</h3>
+                <div class="space-y-2">
+                    <a href="#" class="flex items-center space-x-3 p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                        <i class="fas fa-calendar-alt w-5 text-gray-400"></i>
+                        <span class="text-sm">School Calendar</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                        <i class="fas fa-newspaper w-5 text-gray-400"></i>
+                        <span class="text-sm">Announcements</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-200">
+                        <i class="fas fa-download w-5 text-gray-400"></i>
+                        <span class="text-sm">Downloads</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="border-t border-gray-200 p-4">
+            <!-- Dark Mode Toggle -->
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-green-500 to-green-300 flex items-center justify-center">
+                        <i class="fas fa-moon text-white text-xs"></i>
+                    </div>
+                    <span class="text-sm font-medium text-gray-700">Dark Mode</span>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" id="dark-mode-toggle">
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
+                </label>
+
+
+                
+            </div>
+            
+            <!-- Logout Button -->
+            <button class="w-full flex items-center justify-center space-x-2 p-3 rounded-lg bg-gradient-to-r from-green-500 to-green-400 text-white font-medium hover:opacity-90 transition-opacity duration-200 shadow-md">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
     <!-- Page Header -->
     <div class="pt-24 pb-16 relative bg-gradient-to-r from-green-50 to-yellow-50 px-4">
          <!-- <img src="imgg/download.png" alt="" class="absolute inset-0 w-full h-full"> -->
@@ -330,9 +523,16 @@
                 <div class="video-item">
                     <div class="relative rounded-2xl overflow-hidden shadow-lg">
                         <div class="aspect-video bg-gray-900 flex items-center justify-center">
-                            <button class="play-btn btn btn-circle btn-lg btn-success">
+                            <!-- <button class="play-btn btn btn-circle btn-lg btn-success">
                                 <i class="fa-solid fa-play text-2xl"></i>
-                            </button>
+                            </button> -->
+                            <video  class="w-full h-full object-cover" poster="imgg/toolib.png"
+                                        preload="metadata" controls >
+                                        <source src="videos/toolib.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                  </video>
+
+                            div
                         </div>
                         <div class="p-4 bg-white">
                             <h3 class="font-bold text-gray-800">Annual School Function 2024</h3>
@@ -344,9 +544,16 @@
                 <div class="video-item">
                     <div class="relative rounded-2xl overflow-hidden shadow-lg">
                         <div class="aspect-video bg-gray-900 flex items-center justify-center">
-                            <button class="play-btn btn btn-circle btn-lg btn-success">
+                            <!-- <button class="play-btn btn btn-circle btn-lg btn-success">
                                 <i class="fa-solid fa-play text-2xl"></i>
-                            </button>
+                            </button> -->
+
+                                 <video  class="w-full h-full object-cover" poster="imgg/arab1.png"
+                                        preload="metadata" controls >
+                                        <source src="videos/arab1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                  </video>
+
                         </div>
                         <div class="p-4 bg-white">
                             <h3 class="font-bold text-gray-800">Student Quran Competition</h3>
@@ -358,9 +565,15 @@
                     <div class="relative rounded-2xl overflow-hidden shadow-lg">
 
                         <div class="relative aspect-video bg-gray-900">
-                            <button class="play-btn btn btn-circle btn-lg btn-success">
+                            <!-- <button class="play-btn btn btn-circle btn-lg btn-success">
                                 <i class="fa-solid fa-play text-2xl"></i>
-                            </button>
+                            </button> -->
+
+                             <video  class="w-full h-full object-cover" poster="imgg/toolib.png"
+                                        preload="metadata" controls >
+                                        <source src="videos/arab2.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                            </video>
                         </div>
                         <div class="p-4 bg-white">
                                 <h3 class="font-bold text-gray-800">Student Quran Competition</h3>
@@ -575,6 +788,7 @@
     </button>
     
 </footer>
+
 
     <!-- Lightbox JS -->
     
