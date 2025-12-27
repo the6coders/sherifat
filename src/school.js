@@ -40,25 +40,25 @@
 
     // // script for when toggleMenu is click it bring the dropMenu -->
 
-    let offScreenMenu = document.querySelector(".off-screen-menu");
-    let hamburger = document.querySelector(".hamburger");
-    let fa_xmark = document.querySelector(".fa-xmark");
-    // let body = document.body;
+    // let offScreenMenu = document.querySelector(".off-screen-menu");
+    // let hamburger = document.querySelector(".hamburger");
+    // let fa_xmark = document.querySelector(".fa-xmark");
+    // // let body = document.body;
     
-    hamburger.addEventListener("click", () => {
-        if(offScreenMenu.classList.toggle('active')){
-            // Disable scrolling and interaction on the body
-        body.style.overflow = "hidden"; // Prevents scrolling
-        }
-        else{
-        body.style.overflow = "auto";
-        }
-    });
+    // hamburger.addEventListener("click", () => {
+    //     if(offScreenMenu.classList.toggle('active')){
+    //         // Disable scrolling and interaction on the body
+    //     body.style.overflow = "hidden"; // Prevents scrolling
+    //     }
+    //     else{
+    //     body.style.overflow = "auto";
+    //     }
+    // });
 
-    fa_xmark.addEventListener("click", () => {
-        offScreenMenu.classList.remove('active');
-        body.style.overflow ="auto";
-    });
+    // fa_xmark.addEventListener("click", () => {
+    //     offScreenMenu.classList.remove('active');
+    //     body.style.overflow ="auto";
+    // });
 
 
     //menu ends here
@@ -81,15 +81,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Open menu
     function openMenu() {
         mobileMenu.classList.remove('hidden');
-        // setTimeout(() => {
+        document.body.style.overflow = "hidden";
+        setTimeout(() => {
             menuPanel.classList.remove('translate-x-full');
             backdrop.classList.toggle("hidden")
-        // }, 10);
+        }, 700);
     }
     
     // Close menu
     function closeMenu() {
         menuPanel.classList.add('translate-x-full');
+        document.body.style.overflow = "auto";
         setTimeout(() => {
             mobileMenu.classList.add('hidden');
         }, 300);
@@ -115,4 +117,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
